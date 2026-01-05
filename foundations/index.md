@@ -6,9 +6,12 @@ has_children: true
 permalink: /foundations/
 ---
 
-# Foundations
-
-The foundation of our design system includes the core visual elements that create a consistent look and feel across all Infinitas Learning products.
+{% include hero.html 
+   title="Foundations" 
+   status="stable"
+   description="The foundation of our design system includes the core visual elements that create a consistent look and feel across all Infinitas Learning products.
+"
+   updated="January 2026" %}
 
 ## What's Included
 
