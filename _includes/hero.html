@@ -1,0 +1,14 @@
+<div class="page-hero">
+  <div class="hero-header">
+    <h1>{{ include.title }}</h1>
+    {% if include.status %}
+    <span class="status-badge status-{{ include.status }}">{{ include.status }}</span>
+    {% endif %}
+  </div>
+  {% if include.description %}
+  <p class="hero-description">{{ include.description }}</p>
+  {% endif %}
+  {% if include.updated %}
+  <p class="hero-meta">Last updated: {{ include.updated }}</p>
+  {% endif %}
+</div>

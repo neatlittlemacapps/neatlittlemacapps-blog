@@ -6,24 +6,41 @@ description: "Infinitas Learning Design System documentation - foundations, guid
 permalink: /
 ---
 
-# Infinitas Learning Design System
-
-Welcome to the Infinitas Learning Design System documentation. This site contains guidelines, components, and resources for building consistent user experiences across Infinitas Learning products.
+{% include hero.html 
+   title="Infinitas Learning Design System" 
+   description="Comprehensive guidelines, components, and resources for building consistent user experiences across Infinitas Learning products."
+   updated="January 2026" %}
 
 ## Getting Started
 
-Explore our design system:
+{% capture cards %}
+{% include card.html 
+   title="Foundations" 
+   description="Colors, typography, spacing, and core design principles."
+   url="{{ site.baseurl }}/foundations/" %}
+{% include card.html 
+   title="Guidelines" 
+   description="Best practices and usage guidelines for design and development."
+   url="{{ site.baseurl }}/guidelines/" %}
+{% include card.html 
+   title="Components" 
+   description="Reusable UI components and interaction patterns."
+   url="{{ site.baseurl }}/components/" %}
+{% include card.html 
+   title="Tokens" 
+   description="Design tokens for consistent implementation across platforms."
+   url="{{ site.baseurl }}/tokens/" %}
+{% endcapture %}
+{% include card-grid.html content=cards %}
 
-- **[Foundations]({{ site.baseurl }}/foundations/)** - Colors, typography, spacing, and core design principles
-- **[Guidelines]({{ site.baseurl }}/guidelines/)** - Best practices and usage guidelines
-- **[Components]({{ site.baseurl }}/components/)** - Reusable UI components and patterns
-- **[Tokens]({{ site.baseurl }}/tokens/)** - Design tokens for developers
+{% include divider.html %}
 
 ## Quick Links
 
 - View our [GitHub repository](https://github.com/neatlittlemacapps/neatlittlemacapps-blog)
 - Report issues or suggest improvements
+- Learn about our [layout components]({{ site.baseurl }}/guidelines/layout-components/)
 
 ---
 
-*Last updated: January 2026*
+*Design system maintained by the Infinitas Learning design team*
