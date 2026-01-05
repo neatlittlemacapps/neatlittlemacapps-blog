@@ -6,41 +6,29 @@ description: "Infinitas Learning Design System documentation - foundations, guid
 permalink: /
 ---
 
-{% include hero.html 
-   title="Infinitas Learning Design System" 
-   description="Comprehensive guidelines, components, and resources for building consistent user experiences across Infinitas Learning products."
-   updated="January 2026" %}
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 2rem; margin: -3rem -2rem 3rem -2rem; color: white; border-radius: 0 0 16px 16px;">
+  <h1 style="color: white; font-size: 3rem; margin: 0 0 1rem 0;">Infinitas Learning Design System</h1>
+  <p style="font-size: 1.25rem; opacity: 0.95; max-width: 700px;">Comprehensive guidelines, components, and resources for building consistent user experiences across Infinitas Learning products.</p>
+  <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 2rem;">Last updated: January 2026</p>
+</div>
 
 ## Getting Started
 
-{% capture cards %}
-{% include card.html 
-   title="Foundations" 
-   description="Colors, typography, spacing, and core design principles."
-   url="{{ site.baseurl }}/foundations/" %}
-{% include card.html 
-   title="Guidelines" 
-   description="Best practices and usage guidelines for design and development."
-   url="{{ site.baseurl }}/guidelines/" %}
-{% include card.html 
-   title="Components" 
-   description="Reusable UI components and interaction patterns."
-   url="{{ site.baseurl }}/components/" %}
-{% include card.html 
-   title="Tokens" 
-   description="Design tokens for consistent implementation across platforms."
-   url="{{ site.baseurl }}/tokens/" %}
-{% endcapture %}
-{% include card-grid.html content=cards %}
-
-{% include divider.html %}
-
-## Quick Links
-
-- View our [GitHub repository](https://github.com/neatlittlemacapps/neatlittlemacapps-blog)
-- Report issues or suggest improvements
-- Learn about our [layout components]({{ site.baseurl }}/guidelines/layout-components/)
-
----
-
-*Design system maintained by the Infinitas Learning design team*
+<div class="card-grid">
+  <a href="{{ site.baseurl }}/foundations/" class="nav-card">
+    <h3>Foundations</h3>
+    <p>Colors, typography, spacing, and core design principles.</p>
+  </a>
+  <a href="{{ site.baseurl }}/guidelines/" class="nav-card">
+    <h3>Guidelines</h3>
+    <p>Best practices and usage guidelines for design and development.</p>
+  </a>
+  <a href="{{ site.baseurl }}/components/" class="nav-card">
+    <h3>Components</h3>
+    <p>Reusable UI components and interaction patterns.</p>
+  </a>
+  <a href="{{ site.baseurl }}/tokens/" class="nav-card">
+    <h3>Tokens</h3>
+    <p>Design tokens for consistent implementation across platforms.</p>
+  </a>
+</div>

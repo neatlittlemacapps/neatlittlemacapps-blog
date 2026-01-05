@@ -18,53 +18,53 @@ Our component library provides consistent, accessible building blocks for creati
 
 {% include divider.html %}
 
-{% capture input_controls %}
-{% include component-link.html title="Buttons" url="{{ site.baseurl }}/components/buttons/" %}
-{% include component-link.html title="Forms" url="#" %}
-{% include component-link.html title="Checkboxes" url="#" %}
-{% include component-link.html title="Radio Buttons" url="#" %}
-{% include component-link.html title="Text Fields" url="#" %}
-{% include component-link.html title="Selects" url="#" %}
-{% endcapture %}
-{% include category-section.html 
-   title="Input & Controls" 
-   description="Components that let users enter information and make choices."
-   content=input_controls %}
+<div class="category-section">
+  <h2 class="category-title">Input & Controls</h2>
+  <p class="category-description">Components that let users enter information and make choices.</p>
+  <div class="component-link-grid">
+    <a href="{{ site.baseurl }}/components/buttons/" class="component-link">Buttons</a>
+    <a href="#" class="component-link">Forms</a>
+    <a href="#" class="component-link">Checkboxes</a>
+    <a href="#" class="component-link">Radio Buttons</a>
+    <a href="#" class="component-link">Text Fields</a>
+    <a href="#" class="component-link">Selects</a>
+  </div>
+</div>
 
-{% capture navigation %}
-{% include component-link.html title="Navigation Bar" url="#" %}
-{% include component-link.html title="Breadcrumbs" url="#" %}
-{% include component-link.html title="Tabs" url="#" %}
-{% include component-link.html title="Pagination" url="#" %}
-{% include component-link.html title="Links" url="#" %}
-{% endcapture %}
-{% include category-section.html 
-   title="Navigation & Interaction" 
-   description="Elements that help users move around and engage with the interface."
-   content=navigation %}
+<div class="category-section">
+  <h2 class="category-title">Navigation & Interaction</h2>
+  <p class="category-description">Elements that help users move around and engage with the interface.</p>
+  <div class="component-link-grid">
+    <a href="#" class="component-link">Navigation Bar</a>
+    <a href="#" class="component-link">Breadcrumbs</a>
+    <a href="#" class="component-link">Tabs</a>
+    <a href="#" class="component-link">Pagination</a>
+    <a href="#" class="component-link">Links</a>
+  </div>
+</div>
 
-{% capture surfaces %}
-{% include component-link.html title="Cards" url="#" %}
-{% include component-link.html title="Modals" url="#" %}
-{% include component-link.html title="Panels" url="#" %}
-{% include component-link.html title="Containers" url="#" %}
-{% endcapture %}
-{% include category-section.html 
-   title="Surfaces & Containers" 
-   description="Layout foundations that define structure and containment."
-   content=surfaces %}
+<div class="category-section">
+  <h2 class="category-title">Surfaces & Containers</h2>
+  <p class="category-description">Layout foundations that define structure and containment.</p>
+  <div class="component-link-grid">
+    <a href="#" class="component-link">Cards</a>
+    <a href="#" class="component-link">Modals</a>
+    <a href="#" class="component-link">Panels</a>
+    <a href="#" class="component-link">Containers</a>
+  </div>
+</div>
 
-{% capture feedback %}
-{% include component-link.html title="Alerts" url="#" %}
-{% include component-link.html title="Badges" url="#" %}
-{% include component-link.html title="Tooltips" url="#" %}
-{% include component-link.html title="Progress" url="#" %}
-{% include component-link.html title="Spinners" url="#" %}
-{% endcapture %}
-{% include category-section.html 
-   title="Feedback & Status" 
-   description="Communicate system state and user feedback."
-   content=feedback %}
+<div class="category-section">
+  <h2 class="category-title">Feedback & Status</h2>
+  <p class="category-description">Communicate system state and user feedback.</p>
+  <div class="component-link-grid">
+    <a href="#" class="component-link">Alerts</a>
+    <a href="#" class="component-link">Badges</a>
+    <a href="#" class="component-link">Tooltips</a>
+    <a href="#" class="component-link">Progress</a>
+    <a href="#" class="component-link">Spinners</a>
+  </div>
+</div>
 
 {% include divider.html %}
 
