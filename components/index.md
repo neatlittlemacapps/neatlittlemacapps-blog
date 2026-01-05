@@ -19,35 +19,65 @@ Our component library provides consistent, accessible building blocks for creati
 {% include divider.html %}
 
 <div class="category-section">
-  <h2 class="category-title">Input & Controls</h2>
+  <h2 class="category-title">Form Controls</h2>
   <p class="category-description">Components that let users enter information and make choices.</p>
-  <div class="component-link-grid">
-    <a href="{{ site.baseurl }}/components/buttons/" class="component-link">Buttons</a>
-    <a href="#" class="component-link">Forms</a>
-    <a href="#" class="component-link">Checkboxes</a>
-    <a href="#" class="component-link">Radio Buttons</a>
-    <a href="#" class="component-link">Text Fields</a>
-    <a href="#" class="component-link">Selects</a>
+  <div class="nav-card-grid">
+    {% include card.html 
+      url="/components/button/" 
+      title="Button" 
+      description="Triggers an action or event when pressed."
+      image="/assets/images/components/button.svg" %}
+    {% include card.html 
+      url="/components/checkbox/" 
+      title="Checkbox" 
+      description="Allows users to select multiple options."
+      image="/assets/images/components/checkbox.svg" %}
+    {% include card.html 
+      url="/components/radio/" 
+      title="Radio" 
+      description="Lets users select one option from a set."
+      image="/assets/images/components/radio.svg" %}
   </div>
 </div>
 
 <div class="category-section">
-  <h2 class="category-title">Navigation & Interaction</h2>
-  <p class="category-description">Elements that help users move around and engage with the interface.</p>
-  <div class="component-link-grid">
-    <a href="#" class="component-link">Navigation Bar</a>
-    <a href="#" class="component-link">Breadcrumbs</a>
-    <a href="#" class="component-link">Tabs</a>
-    <a href="#" class="component-link">Pagination</a>
-    <a href="#" class="component-link">Links</a>
+  <h2 class="category-title">Feedback & Status</h2>
+  <p class="category-description">Components that communicate system state and user feedback.</p>
+  <div class="nav-card-grid">
+    {% include card.html 
+      url="/components/badge/" 
+      title="Badge" 
+      description="Displays a numeric count or status indicator."
+      image="/assets/images/components/badge.svg" %}
+    {% include card.html 
+      url="/components/progress/" 
+      title="Progress" 
+      description="Indicates completion progress for tasks."
+      image="/assets/images/components/progress.svg" %}
+    {% include card.html 
+      url="/components/tooltip/" 
+      title="Tooltip" 
+      description="Brief contextual information on hover."
+      image="/assets/images/components/tooltip.svg" %}
   </div>
 </div>
 
 <div class="category-section">
-  <h2 class="category-title">Surfaces & Containers</h2>
-  <p class="category-description">Layout foundations that define structure and containment.</p>
-  <div class="component-link-grid">
-    <a href="#" class="component-link">Cards</a>
+  <h2 class="category-title">Content & Media</h2>
+  <p class="category-description">Components for displaying content and user information.</p>
+  <div class="nav-card-grid">
+    {% include card.html 
+      url="/components/avatar/" 
+      title="Avatar" 
+      description="Represents a user for identification."
+      image="/assets/images/components/avatar.svg" %}
+    {% include card.html 
+      url="/components/card/" 
+      title="Card" 
+      description="Surface for grouping related content."
+      image="/assets/images/components/card.svg" %}
+  </div>
+</div>
     <a href="#" class="component-link">Modals</a>
     <a href="#" class="component-link">Panels</a>
     <a href="#" class="component-link">Containers</a>

@@ -22,7 +22,36 @@
       <h3 class="sidebar-section-title">Components</h3>
       <ul class="sidebar-menu">
         <li><a href="{{ '/components/' | relative_url }}" class="{% if page.url == '/components/' %}active{% endif %}">Overview</a></li>
-        <li><a href="{{ '/components/buttons/' | relative_url }}" class="{% if page.url contains 'buttons' %}active{% endif %}">Buttons</a></li>
+        
+        <li class="sidebar-submenu-title">Form Controls</li>
+        <li><a href="{{ '/components/button/' | relative_url }}" class="{% if page.url contains '/components/button' %}active{% endif %}">Button</a></li>
+        <li><a href="{{ '/components/checkbox/' | relative_url }}" class="{% if page.url contains '/components/checkbox' %}active{% endif %}">Checkbox</a></li>
+        <li><a href="{{ '/components/icon-button/' | relative_url }}" class="{% if page.url contains '/components/icon-button' %}active{% endif %}">Icon Button</a></li>
+        <li><a href="{{ '/components/radio/' | relative_url }}" class="{% if page.url contains '/components/radio' %}active{% endif %}">Radio</a></li>
+        <li><a href="{{ '/components/select/' | relative_url }}" class="{% if page.url contains '/components/select' %}active{% endif %}">Select</a></li>
+        <li><a href="{{ '/components/textarea/' | relative_url }}" class="{% if page.url contains '/components/textarea' %}active{% endif %}">Text Area</a></li>
+        <li><a href="{{ '/components/textfield/' | relative_url }}" class="{% if page.url contains '/components/textfield' %}active{% endif %}">Textfield</a></li>
+        
+        <li class="sidebar-submenu-title">Feedback & Status</li>
+        <li><a href="{{ '/components/alert/' | relative_url }}" class="{% if page.url contains '/components/alert' %}active{% endif %}">Alert</a></li>
+        <li><a href="{{ '/components/badge/' | relative_url }}" class="{% if page.url contains '/components/badge' %}active{% endif %}">Badge</a></li>
+        <li><a href="{{ '/components/progress/' | relative_url }}" class="{% if page.url contains '/components/progress' %}active{% endif %}">Progress</a></li>
+        <li><a href="{{ '/components/skeleton/' | relative_url }}" class="{% if page.url contains '/components/skeleton' %}active{% endif %}">Skeleton</a></li>
+        <li><a href="{{ '/components/spinner/' | relative_url }}" class="{% if page.url contains '/components/spinner' %}active{% endif %}">Spinner</a></li>
+        <li><a href="{{ '/components/tag/' | relative_url }}" class="{% if page.url contains '/components/tag' %}active{% endif %}">Tag</a></li>
+        <li><a href="{{ '/components/tooltip/' | relative_url }}" class="{% if page.url contains '/components/tooltip' %}active{% endif %}">Tooltip</a></li>
+        
+        <li class="sidebar-submenu-title">Content & Media</li>
+        <li><a href="{{ '/components/avatar/' | relative_url }}" class="{% if page.url contains '/components/avatar' %}{% unless page.url contains 'avatar-group' %}active{% endunless %}{% endif %}">Avatar</a></li>
+        <li><a href="{{ '/components/avatar-group/' | relative_url }}" class="{% if page.url contains '/components/avatar-group' %}active{% endif %}">Avatar Group</a></li>
+        <li><a href="{{ '/components/card/' | relative_url }}" class="{% if page.url contains '/components/card' %}active{% endif %}">Card</a></li>
+        <li><a href="{{ '/components/divider/' | relative_url }}" class="{% if page.url contains '/components/divider' %}active{% endif %}">Divider</a></li>
+        
+        <li class="sidebar-submenu-title">Overlays</li>
+        <li><a href="{{ '/components/popover/' | relative_url }}" class="{% if page.url contains '/components/popover' %}active{% endif %}">Popover</a></li>
+        
+        <li class="sidebar-submenu-title">Status</li>
+        <li><a href="{{ '/components/component-status/' | relative_url }}" class="{% if page.url contains '/components/component-status' %}active{% endif %}">Component Status</a></li>
       </ul>
     {% elsif page.url contains '/tokens/' %}
       <h3 class="sidebar-section-title">Tokens</h3>

@@ -1,4 +1,11 @@
 <a href="{{ include.url }}" class="nav-card">
-  <h3>{{ include.title }}</h3>
-  <p>{{ include.description }}</p>
+  {% if include.image %}
+  <div class="card-image">
+    <img src="{{ include.image }}" alt="{{ include.title }}">
+  </div>
+  {% endif %}
+  <div class="card-content">
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.description }}</p>
+  </div>
 </a>

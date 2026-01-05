@@ -16,19 +16,39 @@ permalink: /
 
 <div class="card-grid">
   <a href="{{ site.baseurl }}/foundations/" class="nav-card">
-    <h3>Foundations</h3>
-    <p>Colors, typography, spacing, and core design principles.</p>
+    <div class="card-image">
+      <img src="{{ site.baseurl }}/assets/images/foundations-hero.svg" alt="Foundations">
+    </div>
+    <div class="card-content">
+      <h3>Foundations</h3>
+      <p>Colors, typography, spacing, and core design principles.</p>
+    </div>
   </a>
   <a href="{{ site.baseurl }}/guidelines/" class="nav-card">
-    <h3>Guidelines</h3>
-    <p>Best practices and usage guidelines for design and development.</p>
+    <div class="card-image">
+      <img src="{{ site.baseurl }}/assets/images/guidelines-hero.svg" alt="Guidelines">
+    </div>
+    <div class="card-content">
+      <h3>Guidelines</h3>
+      <p>Best practices and usage guidelines for design and development.</p>
+    </div>
   </a>
   <a href="{{ site.baseurl }}/components/" class="nav-card">
-    <h3>Components</h3>
-    <p>Reusable UI components and interaction patterns.</p>
+    <div class="card-image">
+      <img src="{{ site.baseurl }}/assets/images/components-hero.svg" alt="Components">
+    </div>
+    <div class="card-content">
+      <h3>Components</h3>
+      <p>Reusable UI components and interaction patterns.</p>
+    </div>
   </a>
   <a href="{{ site.baseurl }}/tokens/" class="nav-card">
-    <h3>Tokens</h3>
-    <p>Design tokens for consistent implementation across platforms.</p>
+    <div class="card-image">
+      <img src="{{ site.baseurl }}/assets/images/tokens-hero.svg" alt="Tokens">
+    </div>
+    <div class="card-content">
+      <h3>Tokens</h3>
+      <p>Design tokens for consistent implementation across platforms.</p>
+    </div>
   </a>
 </div>
