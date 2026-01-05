@@ -17,7 +17,7 @@ permalink: /
 <div class="card-grid">
   <a href="{{ site.baseurl }}/foundations/" class="nav-card">
     <div class="card-image">
-      <img src="{{ site.baseurl }}/assets/images/foundations.png" alt="Foundations">
+      <img src="{{ site.baseurl }}/assets/images/foundations-hero.png" alt="Foundations">
     </div>
     <div class="card-content">
       <h3>Foundations</h3>
@@ -26,7 +26,7 @@ permalink: /
   </a>
   <a href="{{ site.baseurl }}/guidelines/" class="nav-card">
     <div class="card-image">
-      <img src="{{ site.baseurl }}/assets/images/guidelines-hero.svg" alt="Guidelines">
+      <img src="{{ site.baseurl }}/assets/images/guidelines-hero.png" alt="Guidelines">
     </div>
     <div class="card-content">
       <h3>Guidelines</h3>
@@ -35,7 +35,7 @@ permalink: /
   </a>
   <a href="{{ site.baseurl }}/components/" class="nav-card">
     <div class="card-image">
-      <img src="{{ site.baseurl }}/assets/images/components-hero.svg" alt="Components">
+      <img src="{{ site.baseurl }}/assets/images/components-hero.png" alt="Components">
     </div>
     <div class="card-content">
       <h3>Components</h3>
@@ -44,7 +44,7 @@ permalink: /
   </a>
   <a href="{{ site.baseurl }}/tokens/" class="nav-card">
     <div class="card-image">
-      <img src="{{ site.baseurl }}/assets/images/tokens-hero.svg" alt="Tokens">
+      <img src="{{ site.baseurl }}/assets/images/tokens-hero.png" alt="Tokens">
     </div>
     <div class="card-content">
       <h3>Tokens</h3>
