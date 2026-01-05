@@ -75,12 +75,42 @@ All buttons should have clear states:
 
 ## Best Practices
 
-✅ **Do:**
-- Use clear, action-oriented labels ("Save Changes", not "OK")
-- Place primary action on the right in dialog boxes
-- Ensure adequate touch target size (minimum 44x44px)
+<div class="callout-grid" markdown="1">
 
-❌ **Don't:**
-- Use too many primary buttons on one page
-- Make buttons too small to tap on mobile
-- Rely on color alone to convey meaning
+{% capture do_content %}
+Use clear, action-oriented labels:
+- "Save Changes" instead of "OK"
+- "Delete Account" instead of "Confirm"
+- "Download Report" instead of "Get"
+
+![Example of good button](https://via.placeholder.com/300x100/28a745/ffffff?text=Save+Changes)
+{% endcapture %}
+{% include do.html content=do_content %}
+
+{% capture dont_content %}
+Use vague or unclear labels:
+- "OK" or "Submit" without context
+- "Click Here"
+- Technical jargon users won't understand
+
+![Example of bad button](https://via.placeholder.com/300x100/dc3545/ffffff?text=OK)
+{% endcapture %}
+{% include dont.html content=dont_content %}
+
+</div>
+
+{% capture do_content %}
+Ensure adequate touch target size:
+- Minimum 44x44px for mobile
+- Add proper spacing between buttons
+- Make the entire button clickable
+{% endcapture %}
+{% include do.html content=do_content %}
+
+{% capture dont_content %}
+Make buttons too small to interact with:
+- Buttons smaller than 44px on mobile
+- Placing buttons too close together
+- Using only icon buttons without labels
+{% endcapture %}
+{% include dont.html content=dont_content %}

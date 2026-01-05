@@ -1,0 +1,92 @@
+// Custom styles for Infinitas Learning Design System
+
+// Callout boxes for Do's and Don'ts
+.callout {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  
+  .callout-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    
+    .callout-icon {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  
+  .callout-content {
+    p:first-child {
+      margin-top: 0;
+    }
+    
+    p:last-child {
+      margin-bottom: 0;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+    }
+    
+    ul, ol {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+// Do callout - green theme
+.callout-do {
+  background-color: #d4edda;
+  border-left-color: #28a745;
+  
+  .callout-title {
+    color: #155724;
+    
+    .callout-icon {
+      color: #28a745;
+    }
+  }
+  
+  .callout-content {
+    color: #155724;
+  }
+}
+
+// Don't callout - red theme
+.callout-dont {
+  background-color: #f8d7da;
+  border-left-color: #dc3545;
+  
+  .callout-title {
+    color: #721c24;
+    
+    .callout-icon {
+      color: #dc3545;
+    }
+  }
+  
+  .callout-content {
+    color: #721c24;
+  }
+}
+
+// Responsive grid for side-by-side do/don't examples
+.callout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
