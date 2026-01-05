@@ -17,7 +17,7 @@ permalink: /
 <div class="card-grid">
   <a href="{{ site.baseurl }}/foundations/" class="nav-card">
     <div class="card-image">
-      <img src="{{ site.baseurl }}/assets/images/foundations-hero.svg" alt="Foundations">
+      <img src="{{ site.baseurl }}/assets/images/foundations.png" alt="Foundations">
     </div>
     <div class="card-content">
       <h3>Foundations</h3>
