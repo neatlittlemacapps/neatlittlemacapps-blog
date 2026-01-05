@@ -5,9 +5,11 @@ parent: Components
 nav_order: 1
 ---
 
-# Buttons
-
-Buttons trigger actions and allow users to interact with the interface.
+{% include hero.html 
+   title="Buttons" 
+   status="stable"
+   description="Triggers an action or event when pressed."
+   updated="January 2026" %}
 
 {% capture tab_buttons %}
 {% include tab-button.html id="types" title="Types & Usage" active=" active" %}
