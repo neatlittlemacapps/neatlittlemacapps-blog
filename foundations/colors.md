@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Colors
 parent: Foundations
 nav_order: 1

@@ -29,29 +29,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs
-
-# Just the Docs theme configuration
-search_enabled: true
-heading_anchors: true
-
-# Navigation structure
-nav_sort: case_insensitive
-
-# Footer content
-footer_content: "Copyright &copy; 2026 Infinitas Learning. Design System Documentation."
-
-# Color scheme (can be light, dark, or custom)
-color_scheme: light
-
-# Aux links for the upper right navigation
-aux_links:
-  "View on GitHub":
-    - "https://github.com/neatlittlemacapps/neatlittlemacapps-blog"
+# No theme - using custom layouts
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.

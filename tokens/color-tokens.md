@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Color Tokens
 parent: Tokens
 nav_order: 1

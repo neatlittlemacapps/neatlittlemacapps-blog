@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Using Tabs
 parent: Guidelines
 nav_order: 11

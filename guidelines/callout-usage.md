@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Using Do/Don't Callouts
 parent: Guidelines
 nav_order: 10

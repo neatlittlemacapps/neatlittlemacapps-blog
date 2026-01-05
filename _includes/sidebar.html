@@ -1,0 +1,35 @@
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    {% assign current_section = page.parent | default: page.title %}
+    
+    {% if page.url contains '/foundations/' %}
+      <h3 class="sidebar-section-title">Foundations</h3>
+      <ul class="sidebar-menu">
+        <li><a href="{{ '/foundations/' | relative_url }}" class="{% if page.url == '/foundations/' %}active{% endif %}">Overview</a></li>
+        <li><a href="{{ '/foundations/colors/' | relative_url }}" class="{% if page.url contains 'colors' %}active{% endif %}">Colors</a></li>
+        <li><a href="{{ '/foundations/typography/' | relative_url }}" class="{% if page.url contains 'typography' %}active{% endif %}">Typography</a></li>
+      </ul>
+    {% elsif page.url contains '/guidelines/' %}
+      <h3 class="sidebar-section-title">Guidelines</h3>
+      <ul class="sidebar-menu">
+        <li><a href="{{ '/guidelines/' | relative_url }}" class="{% if page.url == '/guidelines/' %}active{% endif %}">Overview</a></li>
+        <li><a href="{{ '/guidelines/accessibility/' | relative_url }}" class="{% if page.url contains 'accessibility' %}active{% endif %}">Accessibility</a></li>
+        <li><a href="{{ '/guidelines/callout-usage/' | relative_url }}" class="{% if page.url contains 'callout-usage' %}active{% endif %}">Do/Don't Callouts</a></li>
+        <li><a href="{{ '/guidelines/tab-usage/' | relative_url }}" class="{% if page.url contains 'tab-usage' %}active{% endif %}">Tabs</a></li>
+        <li><a href="{{ '/guidelines/layout-components/' | relative_url }}" class="{% if page.url contains 'layout-components' %}active{% endif %}">Layout Components</a></li>
+      </ul>
+    {% elsif page.url contains '/components/' %}
+      <h3 class="sidebar-section-title">Components</h3>
+      <ul class="sidebar-menu">
+        <li><a href="{{ '/components/' | relative_url }}" class="{% if page.url == '/components/' %}active{% endif %}">Overview</a></li>
+        <li><a href="{{ '/components/buttons/' | relative_url }}" class="{% if page.url contains 'buttons' %}active{% endif %}">Buttons</a></li>
+      </ul>
+    {% elsif page.url contains '/tokens/' %}
+      <h3 class="sidebar-section-title">Tokens</h3>
+      <ul class="sidebar-menu">
+        <li><a href="{{ '/tokens/' | relative_url }}" class="{% if page.url == '/tokens/' %}active{% endif %}">Overview</a></li>
+        <li><a href="{{ '/tokens/color-tokens/' | relative_url }}" class="{% if page.url contains 'color-tokens' %}active{% endif %}">Color Tokens</a></li>
+      </ul>
+    {% endif %}
+  </nav>
+</aside>

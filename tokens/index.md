@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Tokens
 nav_order: 5
 has_children: true

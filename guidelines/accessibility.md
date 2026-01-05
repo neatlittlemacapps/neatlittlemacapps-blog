@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Accessibility
 parent: Guidelines
 nav_order: 1

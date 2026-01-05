@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Layout Components
 parent: Guidelines
 nav_order: 12
