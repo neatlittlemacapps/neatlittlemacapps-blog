@@ -39,12 +39,12 @@
     font-size: 2.75rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #212529;
+    color: #0E0C19;
   }
 
   .hero-tagline {
     font-size: 1.2rem;
-    color: #495057;
+    color: #3C3A47;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
@@ -70,37 +70,37 @@
 }
 
 .btn-primary {
-  background: #0066CC;
+  background: #386641;
   color: #ffffff;
-  border-color: #0066CC;
+  border-color: #386641;
 
   &:hover {
-    background: #0052A3;
-    border-color: #0052A3;
+    background: #2A5232;
+    border-color: #2A5232;
     color: #ffffff;
   }
 }
 
 .btn-secondary {
   background: transparent;
-  color: #0066CC;
-  border-color: #0066CC;
+  color: #386641;
+  border-color: #386641;
 
   &:hover {
-    background: #e7f3ff;
+    background: #E4EFD8;
   }
 }
 
 // Active nav link
 .nav-link.active {
-  color: #0066CC;
+  color: #F7C338;
   font-weight: 600;
 }
 
 // Post meta (date + category line)
 .post-meta {
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #5A5869;
   margin-bottom: 0.5rem;
 
   .post-category {
@@ -115,19 +115,19 @@
   .post-header {
     margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #D5E0C8;
   }
 
   .post-title {
     font-size: 2.25rem;
     font-weight: 700;
     margin: 0.25rem 0 0.75rem;
-    color: #212529;
+    color: #0E0C19;
   }
 
   .post-description {
     font-size: 1.125rem;
-    color: #495057;
+    color: #3C3A47;
     line-height: 1.6;
     margin: 0;
   }
@@ -151,13 +151,13 @@
   .post-footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #D5E0C8;
   }
 }
 
 .back-link {
   font-size: 0.9375rem;
-  color: #0066CC;
+  color: #386641;
   text-decoration: none;
 
   &:hover {
@@ -181,23 +181,23 @@
   .cv-role-title {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #212529;
+    color: #0E0C19;
     margin: 0 0 0.2rem;
   }
 
   .cv-role-company {
     font-size: 0.9375rem;
-    color: #495057;
+    color: #3C3A47;
     margin: 0;
 
     .cv-role-location {
-      color: #6c757d;
+      color: #5A5869;
     }
   }
 
   .cv-role-dates {
     font-size: 0.875rem;
-    color: #6c757d;
+    color: #5A5869;
     white-space: nowrap;
     margin: 0;
     flex-shrink: 0;
@@ -205,7 +205,7 @@
 
   .cv-role-description {
     font-size: 0.9375rem;
-    color: #495057;
+    color: #3C3A47;
     margin: 0.5rem 0 0.75rem;
     line-height: 1.65;
   }
@@ -216,7 +216,7 @@
 
     li {
       font-size: 0.9375rem;
-      color: #495057;
+      color: #3C3A47;
       margin-bottom: 0.35rem;
       line-height: 1.55;
     }
@@ -231,7 +231,7 @@
   li {
     padding: 0.25rem 0;
     font-size: 0.9375rem;
-    color: #495057;
+    color: #3C3A47;
     border-bottom: 1px solid #f1f3f5;
 
     &:last-child {
@@ -388,7 +388,7 @@
   .tab-navigation {
     display: flex;
     gap: 0.25rem;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #D5E0C8;
     margin-bottom: 1.5rem;
     overflow-x: auto;
     
@@ -398,7 +398,7 @@
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       font-weight: 500;
-      color: #6c757d;
+      color: #5A5869;
       cursor: pointer;
       position: relative;
       transition: all 0.2s ease;
@@ -406,12 +406,12 @@
       border-radius: 4px 4px 0 0;
       
       &:hover {
-        background-color: #f8f9fa;
-        color: #495057;
+        background-color: #F4F7F0;
+        color: #3C3A47;
       }
       
       &.active {
-        color: #0066CC;
+        color: #386641;
         background-color: transparent;
         
         &::after {
@@ -421,12 +421,12 @@
           left: 0;
           right: 0;
           height: 2px;
-          background-color: #0066CC;
+          background-color: #386641;
         }
       }
       
       &:focus {
-        outline: 2px solid #0066CC;
+        outline: 2px solid #386641;
         outline-offset: 2px;
       }
     }
@@ -481,7 +481,7 @@
 .page-hero {
   margin: 0 0 2rem 0;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #D5E0C8;
   
   .hero-header {
     display: flex;
@@ -494,20 +494,20 @@
       margin: 0;
       font-size: 2rem;
       font-weight: 700;
-      color: #212529;
+      color: #0E0C19;
     }
   }
   
   .hero-description {
     font-size: 1.125rem;
-    color: #495057;
+    color: #3C3A47;
     margin: 0.5rem 0;
     line-height: 1.6;
   }
   
   .hero-meta {
     font-size: 0.875rem;
-    color: #6c757d;
+    color: #5A5869;
     margin: 0.5rem 0 0 0;
     font-style: italic;
   }
@@ -548,7 +548,7 @@
   
   &.status-experimental {
     background-color: #e7e8ea;
-    color: #495057;
+    color: #3C3A47;
   }
 }
 
@@ -563,14 +563,14 @@
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    border: 1px solid #dee2e6;
+    border: 1px solid #D5E0C8;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s ease;
     overflow: hidden;
     
     &:hover {
-      border-color: #0066CC;
+      border-color: #386641;
       box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
       transform: translateY(-2px);
     }
@@ -579,7 +579,7 @@
       width: 100%;
       height: 160px;
       overflow: hidden;
-      background: #f8f9fa;
+      background: #F4F7F0;
       
       img {
         width: 100%;
@@ -602,13 +602,13 @@
       margin: 0 0 0.5rem 0;
       font-size: 1.25rem;
       font-weight: 600;
-      color: #212529;
+      color: #0E0C19;
     }
     
     p {
       margin: 0;
       font-size: 0.9rem;
-      color: #6c757d;
+      color: #5A5869;
       line-height: 1.5;
     }
   }
@@ -621,13 +621,13 @@
   .category-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #212529;
+    color: #0E0C19;
     margin: 0 0 0.5rem 0;
   }
   
   .category-description {
     font-size: 1rem;
-    color: #6c757d;
+    color: #5A5869;
     margin: 0 0 1.5rem 0;
     line-height: 1.6;
   }
@@ -647,19 +647,19 @@
   .component-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
+    background: #F4F7F0;
+    border: 1px solid #D5E0C8;
     border-radius: 6px;
-    color: #0066CC;
+    color: #386641;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.2s ease;
     
     &:hover {
-      background: #0066CC;
+      background: #386641;
       color: white;
-      border-color: #0066CC;
+      border-color: #386641;
     }
   }
 }
@@ -672,23 +672,23 @@ table {
   font-size: 0.9rem;
   
   thead {
-    background-color: #f8f9fa;
+    background-color: #F4F7F0;
     
     th {
       padding: 0.75rem 1rem;
       text-align: left;
       font-weight: 600;
-      color: #495057;
-      border-bottom: 2px solid #dee2e6;
+      color: #3C3A47;
+      border-bottom: 2px solid #D5E0C8;
     }
   }
   
   tbody {
     tr {
-      border-bottom: 1px solid #dee2e6;
+      border-bottom: 1px solid #D5E0C8;
       
       &:nth-child(even) {
-        background-color: #f8f9fa;
+        background-color: #F4F7F0;
       }
       
       &:hover {
@@ -697,7 +697,7 @@ table {
       
       td {
         padding: 0.75rem 1rem;
-        color: #212529;
+        color: #0E0C19;
         
         code {
           background-color: #e9ecef;
@@ -744,7 +744,7 @@ table {
 // 8. Visual Divider
 .visual-divider {
   border: none;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #D5E0C8;
   margin: 3rem 0;
   
   &.thick {
@@ -787,7 +787,7 @@ table {
     width: 100%;
     height: 140px;
     overflow: hidden;
-    background: #f8f9fa;
+    background: #F4F7F0;
     display: flex;
     align-items: center;
     justify-content: center;
