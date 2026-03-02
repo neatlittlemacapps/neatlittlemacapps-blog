@@ -1,0 +1,13 @@
+footer_menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Portfolio'
+      url: '/projects/'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Blog'
+      url: '/blog/'
+
+copyright_text_html: >-
+  <p> 2026 &copy; <a href="/">Frank De Graeve</a>. Built with <a href="https://cloudcannon.com/">CloudCannon</a> &amp; <a href="https://github.com/cloudcannon/bookshop">Bookshop</a>.</p>

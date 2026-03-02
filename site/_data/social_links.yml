@@ -1,0 +1,6 @@
+#-------------------------------
+# Social Links
+social:
+- {icon: "Twitter", link: "https://twitter.com/neatlittlemacapps"}
+- {icon: "Github", link: "https://github.com/neatlittlemacapps"}
+- {icon: "Linkedin", link: "https://linkedin.com/in/frankdegraeve"}
