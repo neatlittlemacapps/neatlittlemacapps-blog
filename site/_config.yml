@@ -1,21 +1,10 @@
 title: Frank De Graeve
-description: >-
-  Personal website of Frank — I build systems, not screens · DesignOps · UX Strategy · AI Adoption
 url: "https://neatlittlemacapps.github.io"
 baseurl: "/neatlittlemacapps-blog"
-
-author:
-  name: "Frank De Graeve"
-  email: "frank.de.graeve@neatlittlemacapps.com"
-  twitter: "neatlittlemacapps"
-  github: "neatlittlemacapps"
-  linkedin: "frankdegraeve"
 
 plugins:
   - jekyll-bookshop
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll/tagging
 
 # Multiple bookshops can be used on one website,
