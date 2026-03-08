@@ -1,52 +1,39 @@
 ---
 # Banner
 banner:
-  title: "Design Leadership Meets AI Orchestration"
-  content: "I'm Frank De Graeve — a senior UX designer and design ops lead exploring how human-centered design and AI can work together. This is where I share my thinking, my cases, and my journey."
+  title: "I Build Systems, Not Screens"
+  content: "DesignOps, UX Strategy, and AI Adoption. Helping teams build the conditions to scale design, with AI woven into the foundation."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Read the Blog"
-    link: "blog"
+    label: "View Cases"
+    link: "cases"
 
 # Features
 features:
-  - title: "What I Bring to the Table"
+  - title: "15+ Years Building Design Foundations"
     image: "/images/service-1.png"
-    content: "A decade of design leadership across healthcare, education, and enterprise — now focused on AI orchestration and conversational AI."
+    content: "The most valuable design work? Nobody sees it. It lives in the operations, the principles, and the documented ways of working that let teams move faster without losing coherence. That's where I spend my time."
     bulletpoints:
-      - "Design system architecture and unification across product lines"
-      - "DesignOps — scaling teams from 2 to 15+ designers"
-      - "Research-driven strategy grounded in real user needs"
-      - "AI orchestration — designing human-AI collaboration workflows"
-      - "Hands-on with Claude, Obsidian, Hugo, and modern tooling"
+      - "Design system architecture across multi-brand, multi-audience product lines"
+      - "DesignOps... scaling teams from 2 to 15+ designers without losing culture"
+      - "Research-driven strategy grounded in real user evidence, not opinion"
+      - "Cross-functional alignment between design, engineering, and product"
     button:
       enable: true
       label: "View Cases"
       link: "cases"
 
-  - title: "Current Focus: AI Orchestration"
+  - title: "AI Changes the Role, Not the Need"
     image: "/images/service-2.png"
-    content: "I'm exploring how AI systems can be orchestrated to genuinely support human work — not automate judgment, but augment it."
+    content: "Parts of design are becoming self-service because of AI. So the role doesn't shrink, it pivots. Toward orchestration and governance. Defining the principles that shape how systems behave for people, guiding coherence, and making sure what gets built actually works at scale."
     bulletpoints:
-      - "Conversational AI design patterns and guardrails"
-      - "Multi-agent systems and skill architecture"
-      - "Measuring AI value beyond hype metrics"
-      - "Enterprise governance and change management for AI adoption"
+      - "AI adoption as a foundation, not a bolt-on experiment"
+      - "Human-AI collaboration workflows that preserve judgment"
+      - "Enterprise governance and change management for AI integration"
+      - "Building AI into how teams operate, not on top of it"
     button:
       enable: true
       label: "About Me"
       link: "about"
-
-  - title: "Let's Have a Coffee"
-    image: "/images/service-3.png"
-    content: "Whether you're hiring, exploring AI strategy, or just want to think through design challenges together — I'm always up for a good conversation."
-    bulletpoints:
-      - "Open to design leadership and AI orchestration roles"
-      - "Available for consulting on design systems and DesignOps"
-      - "Happy to share what I'm learning about human-AI collaboration"
-    button:
-      enable: true
-      label: "Get in Touch"
-      link: "contact"
 ---

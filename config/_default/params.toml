@@ -11,8 +11,6 @@ theme_switcher = true
 theme_default = "system"
 mainSections = ["blog"]
 contact_form_action = "#"
-google_tag_manager = ""
-google_adsense = ""
 custom_script = ""
 copyright = "Frank De Graeve"
 
@@ -65,8 +63,3 @@ js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 [widgets]
 sidebar = ["categories", "tags"]
 
-[google_map]
-enable = false
-
-[subscription]
-enable = false

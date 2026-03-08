@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Let's Have a Coffee"
+title: "Looking for My Next Challenge"
 image: "/images/call-to-action.png"
-description: "Whether you're looking for design leadership, want to explore AI orchestration, or just want to chat about the future of design — I'd love to connect."
+description: "I'm looking for a strategic role where I can build out design maturity and help teams grow toward system-level thinking, with AI as a natural part of how they operate."
 button:
   enable: true
   label: "Get in Touch"

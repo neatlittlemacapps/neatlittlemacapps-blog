@@ -1,57 +1,27 @@
 ---
-title: "Starting Fresh: My Journey into AI Orchestration"
+title: "Starting Fresh"
 meta_title: ""
-description: "Reflecting on a career pivot and why I'm focused on designing human-AI collaboration"
+description: "Why I'm building this site and what I plan to share here."
 date: 2026-03-08T10:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Career"]
 author: "Frank De Graeve"
-tags: ["design", "ai", "career", "strategy"]
+tags: ["design", "ai", "career"]
 draft: false
 ---
 
-After a decade in design leadership, I'm entering a new chapter focused on something that excites me more than ever: the intersection of human-centered design and AI orchestration.
+This site exists because I wanted a place to think out loud. About design, about AI, about what happens when the two collide in ways that actually matter.
 
-## Why Now?
+I've spent 15+ years in design across agencies, consulting, and in-house product teams. Most recently, three years at Infinitas Learning building design operations and a multi-brand design system from scratch. Before that, seven years at The Reference doing service design and UX strategy. Along the way, I've taught design at T-shaped Academy and held roles at places like Plantyn, Colruyt Group, and Ogilvy.
 
-Over the past few years, I've watched AI evolve from a buzzword to a genuine force reshaping how we work. But here's what I've realized: most conversations about AI in design miss the point. They focus on "what can AI do?" when the real question is "what should humans focus on, and how can AI genuinely support that?"
+The common thread through all of it? The same question: how do you build the conditions that let design teams do their best work at scale?
 
-I've seen design teams wrestle with generative tools that feel like they're replacing creative judgment, AI that surface-level automates tasks without solving real problems, and workflows that add friction instead of removing it.
+## Why AI Changes the Question
 
-There's an opportunity here. A real one. The opportunity to design for genuine human-AI collaboration — not automation theater, but thoughtful orchestration of human creativity and machine capability.
+That question is getting more interesting. AI is reshaping what "doing design" even means. Parts of the discipline are becoming self-service. People are building their own tools, agents, workflows. The role of the designer doesn't shrink, it pivots toward orchestration and governance. Defining principles. Guiding coherence. Making sure what gets built actually works for people.
 
-## My Background
+I find that shift fascinating, and I want to work through it publicly rather than keeping it in my head.
 
-I've been fortunate to lead design in different contexts.
+## What to Expect
 
-**Corilus** taught me how to scale design systems in healthcare — where precision and trust matter profoundly.
-
-**Infinitas Learning** was my DesignOps deep-dive. I built design operations from two designers to 15+, learning that great design systems are about people first, tooling second.
-
-**Colruyt Group** expanded my perspective on omnichannel and strategy at enterprise scale.
-
-**Yokogaki**, my independent practice, was where I learned to work directly with clients on their biggest strategic challenges.
-
-Each role refined my thinking about what great design leadership looks like. But they also showed me a pattern: teams keep asking the same questions about new tools. How do we adopt this? How do we measure this? How do we make sure this doesn't break our process?
-
-## The Shift
-
-What's different about AI isn't that it's new. It's that it requires us to rethink fundamental assumptions about design work.
-
-For years, we've defined design as a discipline of intentional problem-solving. You research, you ideate, you validate, you iterate. AI doesn't remove that need. But it does change *how* you do it.
-
-**Research**: AI can help surface patterns and synthesize insights, but humans still need to ask the right questions. **Ideation**: Generative tools can produce options, but humans must judge what's valuable. **Validation**: AI can help scale testing, but humans must interpret what it means. **Iteration**: AI can accelerate implementation, but humans must maintain the vision.
-
-The skill isn't "how do I use Midjourney?" or "how do I prompt ChatGPT?" The skill is *orchestration* — knowing when to lean on AI and when to lean on human judgment.
-
-## What I'm Building
-
-I'm starting a focused practice around design strategy and AI orchestration. I'm working with organizations to understand their design challenges in the context of AI, design better workflows that thoughtfully integrate AI without losing the human elements, build organizational capability so teams can confidently navigate this transition, and document and share what's working.
-
-## An Invitation
-
-I'm not here to sell you on AI or convince you it's the answer. I'm here to think through it together — rigorously, honestly, and with a commitment to human-centered design principles.
-
-If you're interested in design, strategy, or how we thoughtfully integrate new tools into our work, I'd love to have you along for this journey.
-
-Let's have a coffee (virtual or otherwise) and think through this together.
+This is where I'll share case reflections, thinking about where design leadership is heading, and practical notes from building systems (both design systems and AI systems). No thought leadership fluff. Just honest notes from someone working through it.

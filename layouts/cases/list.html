@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        {{ $paginator:= .Paginate .RegularPages }}
+        {{ range $paginator.Pages }}
+          <div class="md:col-6 lg:col-4 mb-14">
+            <div class="bg-body dark:bg-darkmode-body rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              {{ $image:= .Params.image }}
+              {{ if $image }}
+                <a href="{{ .RelPermalink }}">
+                  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full") }}
+                </a>
+              {{ end }}
+              <div class="p-6">
+                <h4 class="mb-3">
+                  <a href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                  </a>
+                </h4>
+                {{ $categories:= .Params.categories }}
+                {{ if $categories }}
+                  <div class="mb-3 text-sm text-text-light dark:text-darkmode-text-light">
+                    {{ range $i,$p:= $categories }}
+                      <span class="bg-light dark:bg-darkmode-light rounded px-2 py-1 mr-1">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                {{ end }}
+                <p class="mb-4 text-text dark:text-darkmode-text">{{ .Description | default (.Summary | plainify) }}</p>
+                <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+                  {{ T "read_more" | default "Read More" }}
+                </a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+        {{ partial "components/pagination.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}
