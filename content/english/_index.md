@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Read the Blog"
-    link: "/blog"
+    link: "blog"
 
 # Features
 features:
@@ -23,7 +23,7 @@ features:
     button:
       enable: true
       label: "View Cases"
-      link: "/cases"
+      link: "cases"
 
   - title: "Current Focus: AI Orchestration"
     image: "/images/service-2.png"
@@ -36,7 +36,7 @@ features:
     button:
       enable: true
       label: "About Me"
-      link: "/about"
+      link: "about"
 
   - title: "Let's Have a Coffee"
     image: "/images/service-3.png"
@@ -48,5 +48,5 @@ features:
     button:
       enable: true
       label: "Get in Touch"
-      link: "/contact"
+      link: "contact"
 ---
