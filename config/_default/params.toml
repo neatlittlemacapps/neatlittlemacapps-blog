@@ -1,0 +1,72 @@
+#################### default parameters ############################
+favicon = "images/favicon.png"
+logo = "images/logo.png"
+logo_darkmode = "images/logo-darkmode.png"
+logo_width = "160px"
+logo_height = "32px"
+logo_webp = true
+logo_text = "Frank De Graeve"
+navbar_fixed = true
+theme_switcher = true
+theme_default = "system"
+mainSections = ["blog"]
+contact_form_action = "#"
+google_tag_manager = ""
+google_adsense = ""
+custom_script = ""
+copyright = "Frank De Graeve"
+
+[preloader]
+enable = false
+preloader = ""
+
+# Navigation button — "Let's have a coffee" CTA
+[navigation_button]
+enable = true
+label = "Let's Talk"
+link = "mailto:neatlittlemacapps@gmail.com"
+
+[search]
+enable = true
+primary_color = "#405d06"
+include_sections = ["blog"]
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
+
+[announcement]
+enable = false
+expire_days = 7
+content = ""
+
+[metadata]
+keywords = ["UX Design", "Design Operations", "AI Orchestration", "Portfolio"]
+description = "Senior UX Designer & Design Ops Lead exploring AI orchestration and conversational AI"
+author = "Frank De Graeve"
+image = "images/og-image.png"
+
+[site_verification]
+google = ""
+bing = ""
+baidu = ""
+facebook = ""
+mastodon = ""
+
+[cookies]
+enable = false
+expire_days = 60
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+[mermaid]
+js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
+
+[widgets]
+sidebar = ["categories", "tags"]
+
+[google_map]
+enable = false
+
+[subscription]
+enable = false
