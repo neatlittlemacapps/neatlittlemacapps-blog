@@ -2,7 +2,7 @@
 title: "About Frank De Graeve"
 meta_title: "About — Frank De Graeve"
 description: "UX designer and design strategist at the intersection of human-centered design and AI orchestration"
-image: "/images/image-placeholder.png"
+image: "/images/og-image.jpg"
 layout: "about"
 draft: false
 ---
