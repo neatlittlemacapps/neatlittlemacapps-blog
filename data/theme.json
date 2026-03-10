@@ -17,10 +17,10 @@
     },
     "darkmode": {
       "theme_color": {
-        "primary": "#7aa819",
+        "primary": "#F7C338",
         "body": "#1a1e14",
         "border": "#7a8260",
-        "light": "#4a3a10",
+        "light": "#2a3a12",
         "dark": "#f7f7f7"
       },
       "text_color": {
@@ -28,7 +28,7 @@
         "text_dark": "#f7f7f7",
         "text_light": "#9aa590"
       },
-      "accent_color": "#f7c338"
+      "accent_color": "#405d06"
     }
   },
   "fonts": {
