@@ -1,0 +1,45 @@
+<!-- archive widget -->
+{{ $blogSection := site.GetPage "/blog" }}
+{{ if $blogSection }}
+  {{ $pages := where $blogSection.RegularPages "Draft" false }}
+  {{ if gt (len $pages) 0 }}
+    <div class="mb-8">
+      <h5 class="mb-6">
+        <a href="{{ `blog/archive/` | relLangURL }}" class="hover:text-primary dark:hover:text-darkmode-primary">
+          Archive
+        </a>
+      </h5>
+      <div class="bg-light dark:bg-darkmode-light rounded p-8">
+        {{ $byYear := $pages.GroupByDate "2006" }}
+        <ul class="space-y-3">
+          {{ range $byYear }}
+            {{ $year := .Key }}
+            {{ $yearPages := .Pages }}
+            <li>
+              <a
+                class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between font-medium"
+                href="{{ `blog/archive/` | relLangURL }}{{ $year }}/">
+                {{ $year }} <span class="text-text-light dark:text-darkmode-text-light font-normal">( {{ len $yearPages }} )</span>
+              </a>
+              {{/* Month sub-list */}}
+              {{ $byMonth := $yearPages.GroupByDate "January" }}
+              <ul class="mt-1 ml-4 space-y-1 text-sm">
+                {{ range $byMonth }}
+                  {{ $monthName := .Key }}
+                  {{ $monthNum := index (dict "January" "01" "February" "02" "March" "03" "April" "04" "May" "05" "June" "06" "July" "07" "August" "08" "September" "09" "October" "10" "November" "11" "December" "12") $monthName }}
+                  <li>
+                    <a
+                      class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between"
+                      href="{{ `blog/archive/` | relLangURL }}{{ $year }}/{{ $monthNum }}/">
+                      {{ $monthName }} <span class="text-text-light dark:text-darkmode-text-light">( {{ len .Pages }} )</span>
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}

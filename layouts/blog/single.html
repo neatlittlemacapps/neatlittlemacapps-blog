@@ -63,6 +63,36 @@
               </div>
             {{ end }}
           </div>
+          {{/* Previous / Next navigation by date */}}
+          {{ $prev := .PrevInSection }}
+          {{ $next := .NextInSection }}
+          {{ if or $prev $next }}
+            <nav class="mt-8 flex items-start justify-between border-t border-border pt-6 dark:border-darkmode-border">
+              <div class="max-w-[45%]">
+                {{ with $next }}
+                  <a href="{{ .RelPermalink }}" class="group text-sm">
+                    <span class="text-text-light dark:text-darkmode-text-light">
+                      <i class="fa-solid fa-arrow-left mr-1"></i> Older
+                    </span>
+                    <br />
+                    <span class="group-hover:text-primary dark:group-hover:text-darkmode-primary">{{ .Title }}</span>
+                  </a>
+                {{ end }}
+              </div>
+              <div class="max-w-[45%] text-right">
+                {{ with $prev }}
+                  <a href="{{ .RelPermalink }}" class="group text-sm">
+                    <span class="text-text-light dark:text-darkmode-text-light">
+                      Newer <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                    <br />
+                    <span class="group-hover:text-primary dark:group-hover:text-darkmode-primary">{{ .Title }}</span>
+                  </a>
+                {{ end }}
+              </div>
+            </nav>
+          {{ end }}
+
         </article>
       </div>
 

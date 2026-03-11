@@ -27,7 +27,7 @@ link = "mailto:neatlittlemacapps@gmail.com"
 [search]
 enable = true
 primary_color = "#405d06"
-include_sections = ["blog", "archive"]
+include_sections = ["blog"]
 show_image = true
 show_description = true
 show_tags = true
@@ -61,5 +61,5 @@ button = "I Accept"
 js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 
 [widgets]
-sidebar = ["categories", "tags"]
+sidebar = ["categories", "tags", "archive"]
 

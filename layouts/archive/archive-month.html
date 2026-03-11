@@ -1,0 +1,49 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- archive listing -->
+        <div class="lg:col-8">
+          {{ $year := .Params.archive_year }}
+          {{ $month := .Params.archive_month }}
+
+          {{/* Breadcrumb */}}
+          <nav class="mb-8 text-sm text-text-light dark:text-darkmode-text-light">
+            <a href="{{ `blog/` | relLangURL }}" class="hover:text-primary">Blog</a>
+            <span class="mx-1">/</span>
+            <a href="{{ `blog/archive/` | relLangURL }}" class="hover:text-primary">Archive</a>
+            <span class="mx-1">/</span>
+            <a href="{{ `blog/archive/` | relLangURL }}{{ $year }}/" class="hover:text-primary">{{ $year }}</a>
+            <span class="mx-1">/</span>
+            <span>{{ .Title }}</span>
+          </nav>
+
+          {{/* Get all blog posts from this year and month */}}
+          {{ $blogSection := site.GetPage "/blog" }}
+          {{ $allPages := where $blogSection.RegularPages "Draft" false }}
+          {{ $pages := where (where $allPages "Date.Year" (int $year)) "Date.Month" $month }}
+
+          <div class="row">
+            {{ range $pages.ByDate.Reverse }}
+              <div class="md:col-6 mb-14">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+
+          {{ if eq (len $pages) 0 }}
+            <p class="text-center text-text-light">No posts from {{ .Title }}.</p>
+          {{ end }}
+        </div>
+
+        <!-- sidebar -->
+        <div class="lg:col-4">
+          {{ $widget := site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

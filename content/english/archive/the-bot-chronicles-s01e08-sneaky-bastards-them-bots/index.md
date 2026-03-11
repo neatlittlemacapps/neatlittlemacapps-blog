@@ -7,7 +7,7 @@ image: ""
 categories: ["Archive"]
 author: "Frank De Graeve"
 tags: ["archive", "chatbots", "conversational-ai", "ar", "3d", "technology"]
-draft: false
+draft: true
 original_platform: "Medium"
 series: "Bot Chronicles"
 series_weight: 8

@@ -1,0 +1,61 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- archive listing -->
+        <div class="lg:col-8">
+          {{ $year := .Params.archive_year }}
+
+          {{/* Breadcrumb */}}
+          <nav class="mb-8 text-sm text-text-light dark:text-darkmode-text-light">
+            <a href="{{ `blog/` | relLangURL }}" class="hover:text-primary">Blog</a>
+            <span class="mx-1">/</span>
+            <a href="{{ `blog/archive/` | relLangURL }}" class="hover:text-primary">Archive</a>
+            <span class="mx-1">/</span>
+            <span>{{ $year }}</span>
+          </nav>
+
+          {{/* Get all blog posts from this year */}}
+          {{ $blogSection := site.GetPage "/blog" }}
+          {{ $allPages := where $blogSection.RegularPages "Draft" false }}
+          {{ $yearStr := string $year }}
+          {{ $pages := where $allPages "Date.Year" (int $year) }}
+          {{ $byMonth := $pages.GroupByDate "January" }}
+
+          {{ range $byMonth }}
+            <div class="archive-year-group">
+              <h2 class="archive-year-heading">
+                {{ $monthNum := index (dict "January" "01" "February" "02" "March" "03" "April" "04" "May" "05" "June" "06" "July" "07" "August" "08" "September" "09" "October" "10" "November" "11" "December" "12") .Key }}
+                <a href="{{ `blog/archive/` | relLangURL }}{{ $yearStr }}/{{ $monthNum }}/">{{ .Key }}</a>
+              </h2>
+              <ul class="archive-post-list">
+                {{ range .Pages.ByDate.Reverse }}
+                  <li class="archive-post-item">
+                    <time class="archive-post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                      {{ .Date.Format "Jan 2" }}
+                    </time>
+                    <span class="archive-post-title">
+                      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </span>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+
+          {{ if eq (len $pages) 0 }}
+            <p class="text-center text-text-light">No posts from {{ $year }}.</p>
+          {{ end }}
+        </div>
+
+        <!-- sidebar -->
+        <div class="lg:col-4">
+          {{ $widget := site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

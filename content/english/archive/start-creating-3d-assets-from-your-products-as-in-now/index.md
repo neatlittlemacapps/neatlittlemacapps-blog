@@ -7,7 +7,7 @@ image: "https://cdn-images-1.medium.com/max/2560/0*OHiOPxhuRpEjlzdQ"
 categories: ["Archive"]
 author: "Frank De Graeve"
 tags: ["archive", "ar", "3d", "technology"]
-draft: false
+draft: true
 original_platform: "Medium"
 ---
 

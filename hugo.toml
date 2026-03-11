@@ -89,6 +89,27 @@ endLevel = 5
 ordered = true
 
 
+########################## Related Content #########################
+[related]
+includeNewer = true
+threshold = 50
+toLower = true
+
+  [[related.indices]]
+  name = "tags"
+  weight = 100
+  toLower = true
+
+  [[related.indices]]
+  name = "categories"
+  weight = 50
+  toLower = true
+
+  [[related.indices]]
+  name = "date"
+  weight = 10
+
+
 ########################### Media types ###########################
 [mediaTypes]
 [mediaTypes."application/manifest+json"]

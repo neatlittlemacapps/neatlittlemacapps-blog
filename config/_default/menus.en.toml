@@ -22,14 +22,9 @@ url = "/about"
 weight = 4
 
 [[main]]
-name = "Archive"
-url = "/archive"
-weight = 5
-
-[[main]]
 name = "Contact"
 url = "/contact"
-weight = 6
+weight = 5
 
 # footer menu
 [[footer]]
@@ -47,7 +42,3 @@ name = "Cases"
 url = "/cases"
 weight = 3
 
-[[footer]]
-name = "Archive"
-url = "/archive"
-weight = 4

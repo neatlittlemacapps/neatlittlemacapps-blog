@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- archive listing -->
+        <div class="lg:col-8">
+          {{/* Get ALL non-draft regular pages from the blog section */}}
+          {{ $blogSection := site.GetPage "/blog" }}
+          {{ $pages := where $blogSection.RegularPages "Draft" false }}
+          {{ $byYear := $pages.GroupByDate "2006" }}
+
+          {{ range $byYear }}
+            <div class="archive-year-group">
+              <h2 class="archive-year-heading">
+                <a href="{{ `blog/archive/` | relLangURL }}{{ .Key }}/">{{ .Key }}</a>
+              </h2>
+              <ul class="archive-post-list">
+                {{ range .Pages.ByDate.Reverse }}
+                  <li class="archive-post-item">
+                    <time class="archive-post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                      {{ .Date.Format "Jan 2" }}
+                    </time>
+                    <span class="archive-post-title">
+                      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </span>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+
+        <!-- sidebar -->
+        <div class="lg:col-4">
+          {{ $widget := site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

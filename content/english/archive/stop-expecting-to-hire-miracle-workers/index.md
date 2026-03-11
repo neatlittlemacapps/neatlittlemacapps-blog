@@ -7,7 +7,7 @@ image: "https://cdn-images-1.medium.com/max/1200/1*OMg40F3GvkJd5jkck0-93A.jpeg"
 categories: ["Archive"]
 author: "Frank De Graeve"
 tags: ["archive", "hiring", "opinion"]
-draft: false
+draft: true
 original_platform: "Medium"
 ---
 

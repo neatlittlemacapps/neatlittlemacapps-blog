@@ -4,15 +4,6 @@
       <div class="row justify-center">
         <article class="lg:col-10">
 
-          {{/* Archive banner */}}
-          <div class="mb-6 inline-block rounded bg-light px-3 py-1 text-sm text-text-light dark:bg-darkmode-light dark:text-darkmode-text-light">
-            <i class="fa-solid fa-box-archive mr-1"></i>
-            Archive
-            {{ with .Params.series }}
-              &middot; {{ . }}
-            {{ end }}
-          </div>
-
           {{ $image := .Params.image }}
           {{ if $image }}
             <div class="mb-10">
@@ -51,31 +42,6 @@
             </li>
           </ul>
 
-          {{/* Series navigation */}}
-          {{ with .Params.series }}
-            {{ $series := . }}
-            {{ $allInSeries := where (where site.RegularPages "Params.series" $series) "Section" "archive" }}
-            {{ $allInSeries = sort $allInSeries "Date" }}
-            {{ if gt (len $allInSeries) 1 }}
-              <details class="mb-8 rounded border border-border p-4 dark:border-darkmode-border">
-                <summary class="cursor-pointer font-semibold">
-                  <i class="fa-solid fa-list mr-2"></i>{{ $series }} ({{ len $allInSeries }} posts)
-                </summary>
-                <ol class="mt-3 list-inside list-decimal space-y-1 pl-2 text-sm">
-                  {{ range $allInSeries }}
-                    <li>
-                      {{ if eq $.RelPermalink .RelPermalink }}
-                        <strong>{{ .Title }}</strong> <span class="text-text-light">(you are here)</span>
-                      {{ else }}
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                      {{ end }}
-                    </li>
-                  {{ end }}
-                </ol>
-              </details>
-            {{ end }}
-          {{ end }}
-
           <div class="content mb-10">
             {{ .Content }}
           </div>
@@ -100,46 +66,69 @@
             {{ end }}
           </div>
 
-          {{/* Previous/Next in series */}}
-          {{ with .Params.series }}
-            {{ $series := . }}
-            {{ $allInSeries := where (where site.RegularPages "Params.series" $series) "Section" "archive" }}
-            {{ $allInSeries = sort $allInSeries "Date" }}
-            {{ if gt (len $allInSeries) 1 }}
-              <div class="mt-8 flex items-center justify-between border-t border-border pt-6 dark:border-darkmode-border">
-                {{ $found := false }}
-                {{ $prev := false }}
-                {{ $next := false }}
-                {{ range $i, $p := $allInSeries }}
-                  {{ if eq $.RelPermalink $p.RelPermalink }}
-                    {{ if gt $i 0 }}
-                      {{ $prev = index $allInSeries (sub $i 1) }}
-                    {{ end }}
-                    {{ if lt $i (sub (len $allInSeries) 1) }}
-                      {{ $next = index $allInSeries (add $i 1) }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-                <div>
-                  {{ with $prev }}
-                    <a href="{{ .RelPermalink }}" class="text-sm">
-                      <i class="fa-solid fa-arrow-left mr-1"></i> Previous in series
-                    </a>
-                  {{ end }}
-                </div>
-                <div>
-                  {{ with $next }}
-                    <a href="{{ .RelPermalink }}" class="text-sm">
-                      Next in series <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </a>
-                  {{ end }}
-                </div>
-              </div>
+          {{/* Previous / Next navigation by date (across entire blog section) */}}
+          {{ $blogSection := site.GetPage "/blog" }}
+          {{ $allPosts := where $blogSection.RegularPages "Draft" false }}
+          {{ $allPosts = $allPosts.ByDate }}
+          {{ $prev := false }}
+          {{ $next := false }}
+          {{ range $i, $p := $allPosts }}
+            {{ if eq $.RelPermalink $p.RelPermalink }}
+              {{ if gt $i 0 }}
+                {{ $prev = index $allPosts (sub $i 1) }}
+              {{ end }}
+              {{ if lt $i (sub (len $allPosts) 1) }}
+                {{ $next = index $allPosts (add $i 1) }}
+              {{ end }}
             {{ end }}
+          {{ end }}
+          {{ if or $prev $next }}
+            <nav class="mt-8 flex items-start justify-between border-t border-border pt-6 dark:border-darkmode-border">
+              <div class="max-w-[45%]">
+                {{ with $prev }}
+                  <a href="{{ .RelPermalink }}" class="group text-sm">
+                    <span class="text-text-light dark:text-darkmode-text-light">
+                      <i class="fa-solid fa-arrow-left mr-1"></i> Older
+                    </span>
+                    <br />
+                    <span class="group-hover:text-primary dark:group-hover:text-darkmode-primary">{{ .Title }}</span>
+                  </a>
+                {{ end }}
+              </div>
+              <div class="max-w-[45%] text-right">
+                {{ with $next }}
+                  <a href="{{ .RelPermalink }}" class="group text-sm">
+                    <span class="text-text-light dark:text-darkmode-text-light">
+                      Newer <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                    <br />
+                    <span class="group-hover:text-primary dark:group-hover:text-darkmode-primary">{{ .Title }}</span>
+                  </a>
+                {{ end }}
+              </div>
+            </nav>
           {{ end }}
 
         </article>
       </div>
+
+      <!-- Related posts -->
+      {{ $related := .Site.RegularPages.Related . | first 10 }}
+      {{ $related = $related | shuffle | first 3 }}
+      {{ with $related }}
+        <div class="section pb-0">
+          <h2 class="h3 mb-12">
+            {{ T "related_posts" | default "Related Posts" }}
+          </h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-4 md:col-6 mb-14">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}

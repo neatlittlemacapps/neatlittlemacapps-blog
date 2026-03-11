@@ -7,7 +7,7 @@ image: "https://cdn-images-1.medium.com/max/1200/1*wA8Xu0LmcnPxfKJKJiPQ4Q.jpeg"
 categories: ["Archive"]
 author: "Frank De Graeve"
 tags: ["archive", "chatbots", "conversational-ai"]
-draft: false
+draft: true
 original_platform: "Medium"
 series: "Bot Chronicles"
 series_weight: 1
