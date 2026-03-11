@@ -122,7 +122,6 @@ figure.wide {
 .duotone {
   position: relative;
   display: block;
-  overflow: hidden;
   background-color: var(--color-body);
 }
 
