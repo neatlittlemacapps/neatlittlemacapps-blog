@@ -126,11 +126,13 @@ figure.wide {
 .duotone img {
   display: block;
   width: 100%;
-  filter: grayscale(1) sepia(1) hue-rotate(50deg) saturate(3) brightness(0.65);
+  /* Green tint on yellow sections (light mode) */
+  filter: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(5005%) hue-rotate(69deg) brightness(88%) contrast(95%);
 }
 
 .dark .duotone img {
-  filter: grayscale(1) sepia(1) hue-rotate(10deg) saturate(2.5) brightness(1.05);
+  /* Yellow tint on green sections (dark mode) */
+  filter: brightness(0) saturate(100%) invert(99%) sepia(41%) saturate(4004%) hue-rotate(325deg) brightness(99%) contrast(96%);
 }
 
 /* --- Video embed responsive wrapper --- */

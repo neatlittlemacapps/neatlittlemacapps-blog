@@ -1,12 +1,17 @@
 ---
-title: "Starting Fresh"
-meta_title: ""
-description: "Why I'm building this site and what I plan to share here."
-date: 2026-03-08T10:00:00Z
-image: "/images/teasers/pivot.png"
-categories: ["Career"]
-author: "Frank De Graeve"
-tags: ["design", "ai", "career"]
+fileClass: blog-post
+title: Starting Fresh
+meta_title: ''
+description: Why I'm building this site and what I plan to share here.
+date: '2026-03-08'
+image: /images/teasers/pivot.png
+categories:
+- Career
+author: Frank De Graeve
+tags:
+- design
+- ai
+- career
 draft: false
 ---
 
