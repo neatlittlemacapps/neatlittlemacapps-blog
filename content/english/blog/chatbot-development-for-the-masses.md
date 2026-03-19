@@ -4,7 +4,6 @@ title: Chatbot Development for the Masses
 meta_title: ''
 description: The Bot Chronicles S01E04
 date: '2017-04-04'
-image: ''
 categories:
 - Archive
 author: Frank De Graeve

@@ -4,7 +4,6 @@ title: 'The Bot Chronicles S01E05: How to define for whom to build your bot'
 meta_title: ''
 description: 'This is episode 5 of the series. Be sure to check out the previous episodes here:'
 date: '2017-04-21'
-image: ''
 categories:
 - Archive
 author: Frank De Graeve

@@ -4,7 +4,6 @@ title: Bot Chronicles —epilogue
 meta_title: ''
 description: This article might seem a bit at odds with what I’d normally write on our Reference Company blog. Usually we provide you with knowledgeable…
 date: '2017-01-25'
-image: ''
 categories:
 - Archive
 author: Frank De Graeve

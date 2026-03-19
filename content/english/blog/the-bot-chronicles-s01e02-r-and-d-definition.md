@@ -4,7 +4,6 @@ title: 'The Bot Chronicles S01E02: R&D definition'
 meta_title: ''
 description: Intro into the R&D mindset
 date: '2017-02-03'
-image: ''
 categories:
 - Archive
 author: Frank De Graeve

@@ -4,7 +4,6 @@ title: 'The Bot Chronicles S01E08: sneaky bastards, them bots.'
 meta_title: ''
 description: 'This is episode 8 of the series. Be sure to check out the previous episodes here:'
 date: '2017-08-24'
-image: ''
 categories:
 - Archive
 author: Frank De Graeve
