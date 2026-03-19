@@ -44,4 +44,3 @@ I guess that’s what makes me so angry. The fact that I simply do not know how 
 
 Oh, look… Carrot cake’s ready. Rant is over. Gotta go…
 
-{{< figure src="/images/medium/1_bL3JW81RNW5B25yA21_ihQ.png" >}}

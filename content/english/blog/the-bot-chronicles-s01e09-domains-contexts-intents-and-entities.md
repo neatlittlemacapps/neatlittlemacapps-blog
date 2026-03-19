@@ -41,10 +41,6 @@ This means we need to define bot functionality based on **intent** and **not on 
 
 NLP (Natural Language Processing) can help in detecting intent. Most bot building platforms will provide access to NLP to help you detect intents, or you define them yourself and you train the AI to detect these intents and extend the set of sentences that are tied to this intent.
 
-{{< figure src="/images/medium/0_rOPw15CSse-1Qbsh.jpg" >}}
-
-{{< figure src="/images/medium/0_24yBx94D63eL6CU8.jpg" >}}
-
 Entities
 
 “Entities” could be defined as a set of “meta data” to your intents. Let’s use the jobboard example again.
@@ -57,8 +53,6 @@ Consider these 2 sentences:
 The “intent” here is: **[get me some vacancies]** But in order to provide a valuable response I’d need additional information for this intent. I need information like the job fuction, the job regime, the sector in which the candidate wants to work and what the commute time should be. These are all entities that can help in formulating the intent.
 
 I’ll give you some additional sentences here, allowing you to find the intent and the entities for yourselves.
-
-{{< figure src="/images/medium/0_wHAGtrsl0QJH6_h3.jpg" >}}
 
 Now you can start to define some pretty complex functionalities. You might for example make certain entities required in order for an intent to be executed properly.
 
@@ -128,8 +122,6 @@ I mentioned you can set a certain context for your conversation. The fun thing w
 
 I tried visualizing this as a sort of layered cake, where every layer stands for a context.
 
-{{< figure src="/images/medium/0_RqPbkGI3MWjFiVRb.jpg" >}}
-
 Within that context you can have a certain flow and a set of possible functionalities (the circles). From time to time these functionalities make you jump contexts (AKA, go to another layer in the cake). You’ll notice that some functionalities are persistent over multiple contexts.
 
 Take “Help” for example. Within a bot there might be a “help” functionality. This functionality should be available in whatever context you’re in. In other words, the user should always be able to ask for help when they’re stuck within the bot. Help is represented by the green column on the left. You see that, whatever context the visitor is in, the “help” functionality is always available.
@@ -144,8 +136,6 @@ Other purposes could have domains of themselves. Booking a flight for example, o
 
 The concept is quite clear when looking at the prebuilt agents in Dialogflow (btw, API.AI rebranded to Dialogflow some time after this article).
 
-{{< figure src="/images/medium/0_md_C59ni_br7zeZF.jpg" >}}
-
 Have a look and imagine how your service would look amongst these domains. Enticing, right
 
 ## Now what?
@@ -155,4 +145,3 @@ Through analysis and prototyping your conversations you’ve detected your conve
 If I’ve peaked your interest, don’t hesitate and drop us a line. We’d be happy to guide you along your very own bot development project.
 
 ---
-{{< figure src="/images/medium/1_c1LDMH5vbnIz9rmAka8Hwg.png" >}}

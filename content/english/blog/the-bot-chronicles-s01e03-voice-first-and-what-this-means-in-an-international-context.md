@@ -4,7 +4,6 @@ title: 'The Bot Chronicles S01E03: “Voice First” and what this means in an i
 meta_title: ''
 description: Our homes are being invaded by AI-infused smart speakers. I’m talking about Google Home and whatever form the Amazon Echo is poured into at…
 date: '2017-02-03'
-image: /images/medium/1_qe_im5TFJHL4LaavQhcqCg.png
 categories:
 - Archive
 author: Frank De Graeve
@@ -20,8 +19,6 @@ original_platform: Medium
 Our homes are being invaded by AI-infused smart speakers. I’m talking about Google Home and whatever form the Amazon Echo is poured into at the moment (I’m betting there will be a flower pot version soon).
 
 ## We’re moving into a voice first world.
-
-{{< figure src="/images/medium/1_qe_im5TFJHL4LaavQhcqCg.png" alt="The move from mainframes all the way to Voice First" caption="The move from mainframes all the way to Voice First" >}}
 
 > *We came from big mainframes, and moved from PC’s to laptops/netbooks. Then tablets and smartphones came along: the “mobile first” era. But now it seems a “Voice first” period is coming along and for the first time, we’re bumping into a new barrier we’ll need to overcome: Speech.*
 

@@ -47,8 +47,6 @@ We tried out if some of our methodologies we use today will hold up when it come
 
 ## Empathy mapping
 
-{{< figure src="/images/medium/0_9D0J37m40h83A-RT.jpg" >}}
-
 Let’s first try to get an idea of who our customers are. A common way to tackle this is **creating an empathy map**. You’ll find lots of examples online, but if you like, you can follow along with this exercise and download our empathy mapping template here.
 
 It’s best to perform this exercise with a **multidisciplinary** **team** of people. They don’t need to be real customers, but they do need to have knowledge of your company and it’s services.
@@ -87,8 +85,6 @@ What are the pain points (frustrations, obstacles, risks) they are experiencing 
  The end result of this exercise is an empathy map that provides us with a nice concept of our customer. A concept we can return to throughout the development of any product.
 
 ## Customer Journey Mapping
-
-{{< figure src="/images/medium/0_AvYV-5XghFy3dWZA.jpg" >}}
 
 Now we can jump into another commonly used methodology: customer (or user) journey mapping. Here we’re following a persona (based on previous exercise) throughout their relationship with our organization, our services, product and brand. We’ll do this over time and across channels. Along the way we might map out their **emotions **and we’ll be able to define certain moments of truth. The end result is a visual map representation of this journey.
 

@@ -66,8 +66,6 @@ You may choose to build a very action based bot (click on stuff, you get an answ
 
 You could try to draw out the conversation flow in a flowchart. Given the complex nature of conversational UI, and the unpredictability of conversations (and the humans behind it) **this might not be a good first step**. You’ll end up with a very strict action based bot and you’ll miss out on a lot of interesting insights. It can help for the next solution below, but only as a rough guideline.
 
-{{< figure src="/images/medium/0_OgBlFQ_l6QtW_geo.jpg" >}}
-
 ### 2. Human bots
 
 Let’s explain by using a “jobboard” bot as an example.
@@ -86,8 +84,6 @@ Doing all of this will help in defining domains, contexts, intents and entities.
 ### 3. Semi-working bot prototypes:
 
 Another way of tackeling this is actually prototyping the bot. Tools like [Chatfuel](https://chatfuel.com/) allow you to actually create a working iteration of a bot.
-
-{{< figure src="/images/medium/0_x69dUnTwp4i7md48.jpg" >}}
 
 The advantages of this are:
 

@@ -36,8 +36,6 @@ Whilst trying out a bunch of bots, you’ll frequently run into bots that are co
 
 So there is a real challenge here. In fact, we believe one of the hardest challenges in bot development isn’t necessarily technical but rather UX related.
 
-{{< figure src="/images/medium/0_Tpgz6yDDQXnxp7cb.jpg" >}}
-
 One of those UX challenges is defining your bot personality, which turns out to be tricky. What is it’s personality? How does it walk and talk? Is it in line with your brand and what people expect of your brand? Or should we diverge, since we’re presenting ourselves in a different channel? Where is the middle ground between it’s ‘bot-ness’ and the ability to have a normal human conversation without landing in the uncanny valley where it just gets people confused?
 
 Fascinating stuff. So let’s try out how we define a “bot” personality.
@@ -72,8 +70,6 @@ Decide collectively where you’d like your bot personality to land on the scale
 
 One such scale would look like this:
 
-{{< figure src="/images/medium/0_CNRMk0MHcSr9BM2i.jpg" >}}
-
 Now iterate this exercise across a multitude of relevant personality scales, repeating the proces, and put the end result in the template provided above.
 
 ## Step 3: visualize the personality
@@ -81,8 +77,6 @@ Now iterate this exercise across a multitude of relevant personality scales, rep
 Once you have your scales. All you have to do is map out the personality on a spidergraph. You might need to define multiple personality graphs, based on multiple channels and audiences.
 
 The end result can look like this:
-
-{{< figure src="/images/medium/0_-QtJMHg0mBWeiyyf.jpg" >}}
 
 As an example I pitched the Carrot Fit app ([http://www.meetcarrot.com/fit/ ](http://www.meetcarrot.com/fit/)not a bot, I know) to a generic fictive fitness app. As you can see, you could have 2 totally separate personalities for a bot with the same function: getting you fit. Personally, I’m much more motivated by the Carrot app then by the generic serious “coaching” type of app. One more reason to have a good understanding of your audience and what motivates them.
 
@@ -128,13 +122,9 @@ At some point your bot will have a physical representation. It might be in your 
 You can go different routes here. We had a cartoonist on staff, but any designer with experience in character design can help out.  
  For our Reference bot I just had an open chat with the designer and I described the bot and its personality to him. I had a rough mockup of how I saw our bot evolving through different biotopes.
 
-{{< figure src="/images/medium/0__vnEXELvEvt2zQ-m.jpg" >}}
-
 Stunning. I know.
 
 After some iterations the first drawings came through, and we finalized them by pouring it all in vectors. Check out the gif below to see the final result. Mind you, we didn’t go all the way here since this bot is just a learning project. Ideally you have your character created in full 3D so you can render it in any pose you need.
-
-{{< figure src="/images/medium/0_9b5odeYrStGNFegp.jpg" >}}
 
 ## Now what?
 

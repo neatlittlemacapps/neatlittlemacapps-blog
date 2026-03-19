@@ -35,8 +35,6 @@ An example of bots within the company is related to our standup meetings.
 
 Although the Agile Manifesto speaks of **“Individuals and interactions over processes and tools**”, we started playing with [Geekbot](https://geekbot.io/), a bot that lives in Slack. We wanted to try out alternatives for our standup meetings. For those amongst you who are not familiar with a standup, it’s a 15 minute “meeting” where every member of a team says what they did the day before, what they’ll be doing today, and if there are any issues blocking them. Since we often have team members working in different locations throughout the company, we decided to give Geekbot a try. Geekbot notifies every team member from the moment they come online in Slack and posts three questions mentioned above. Every team member answers these questions when they see fit (some of them start very early, others start somewhat later). Geekbot kindly awaits their responses. When all members have done their thing, Geekbot summarizes everything and sends out a standup report containing a handy overview. This way, we can focus primarily on the blocking issues.
 
-{{< figure src="/images/medium/0_dUgyAQ6hlpYREe1T.jpg" alt="Geekbot in use for standup meetings @The Reference" caption="Geekbot in use for standup meetings @The Reference" >}}
-
 All in all this is basic stuff. But more and more we see these bots turn up in places where they interact with us on a more **“conversational” manner**: we ask it questions, or give orders. The bots determine the context and intent of our questions and responses and replies and performs as requested, but also provides us the feedback in that same conversational manner. Since conversations can be about anything, you start seeing bots in just about every domain there is. From marketing to customer services and content distribution over to full blown e-commerce solutions. Want to check out some of these? [Botlist ](https://botlist.co/)allows you to quickly filter based on platform and domain.
 
 ## Where do bots live? — The Conversational UI
@@ -53,15 +51,11 @@ And if we take it one step further. Which apps on those mobile phones do we use 
 
 In fact, [messaging apps](http://www.smartinsights.com/internet-marketing-statistics/global-internet-trends-2016-insights-kpcbs-latest-report/) are [outperforming ](http://uk.businessinsider.com/the-messaging-app-report-2015-11)social networks. [We’ve got the graphs to prove it ;)](https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.99htcims7)
 
-{{< figure src="/images/medium/1_4Mv4C-jvpMynWQoDCe6xow.png" alt="Messaging apps are a very common bot biotope. — image byThe Reference" caption="Messaging apps are a very common bot biotope. — image byThe Reference" >}}
-
 So there is our first bot biotope: messaging apps.
 
 There are already plenty of bots out there on all of these platforms, but for now, bots in Facebooks Messenger are the most common ones.
 
 But there are many different “strains” of bots. And like any other organisms, these strains might do better in a different biotope.
-
-{{< figure src="/images/medium/1_LEykLjxY873J44oxaxr-Xw.png" alt="Bots migrate to other biotopes websites can’t reach, like your livingroom. — image byThe Reference" caption="Bots migrate to other biotopes websites can’t reach, like your livingroom. — image byThe Reference" >}}
 
 One specific strain even manages to cut its ties from phones or sites entirely. It broke free and invaded our cars and homes. These bots don’t leverage written communication. Instead they **adhere to the spoken word**.
 

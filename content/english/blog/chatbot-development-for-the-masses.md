@@ -18,13 +18,9 @@ original_platform: Medium
 
 ### The Bot Chronicles S01E04
 
-{{< figure src="/images/medium/1_PTpd8BDRtoRGx3g6ma_XeQ.png" >}}
-
 If Lego Technics is for the big boys, Chatfuel would be best described as the Lego DUPLO series. Which is good, since **I don’t know how to write code**. A tool that brings (basic) bot creation to the masses. So I went ahead and created a companion bot to this Bot Chronicles Series!
 
 Meet Ref-it (due to powers beyond my own it is now called Frankie. Helas.), our very own Chatbot:
-
-{{< figure src="/images/medium/0_jYukFGduGwOY-yxY.jpg" >}}
 
 [Go ahead and give it a test-run.](https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F1864083897210712%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink) Read on if you’re interested in how the bot was created.  
  Note: you’ll get the best experience by clicking this link on a mobile device that has the Facebook Messenger client installed.
@@ -51,8 +47,6 @@ I’m pretty happy with the way the bot turned out. The approach for creating th
 ### Introduction
 
 Like any bot I decided to have the bot introduce itself. I kept it quite basic and immediately provided the visitor with three important choices. Learn more about what the bot can do, go to the bot chronicles section or get help.
-
-{{< figure src="/images/medium/0_UiS4hJw6SB1mHtOa.jpg" >}}
 
 ### Help
 
