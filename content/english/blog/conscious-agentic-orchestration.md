@@ -26,3 +26,5 @@ The Dead Penguin Calculator estimates the ecological cost of any of my AI conver
 {{< figure src="/images/blogposts/DPC-example.png" alt="The Dead Penguin Calculator" caption="Example of the output of the DPC">}}
 
 It's a conversation piece more than a scientific instrument, but it makes the abstract cost of AI usage visceral and a little absurd. Just how I like it. And before you ask, yes, it takes into account the actual cost of generating the report as well.
+
+*Penguin by G-CAT from [Noun Project](https://thenounproject.com/browse/icons/term/penguin/ "Penguin Icons") (CC BY 3.0)*
