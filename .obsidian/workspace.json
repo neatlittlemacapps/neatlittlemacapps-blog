@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/english/cases/liantis-ux-research.md",
+                "file": "content/english/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "liantis-ux-research"
+              "title": "_index"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "03ea4d6fb453741a",
   "lastOpenFiles": [
+    "content/english/cases/liantis-ux-research.md",
     "content/english/cases/infinitas-designops.md",
     "content/english/cases/_index.md",
     "content/english/blog/conscious-agentic-orchestration.md",
@@ -225,7 +226,6 @@
     "assets/images/medium",
     "content/english/blog/_index.md",
     "content/english/blog/archive/2026/02/_index.md",
-    "content/english/blog/archive/2017/01/_index.md",
     "static/images/medium",
     "static/images"
   ]

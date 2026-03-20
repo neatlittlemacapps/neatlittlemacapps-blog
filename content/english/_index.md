@@ -6,8 +6,8 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "View Cases"
-    link: "cases"
+    label: "Read Blog"
+    link: "blog"
 
 # Features
 features:
