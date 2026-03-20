@@ -4,7 +4,7 @@ title: Conscious Agentic Orchestration with DPC
 meta_title: Conscious Agentic Orchestration
 description: Why I integrating a "Dead Penguin Calculator" skill in all my projects.
 date: 2026-03-20
-image: /images/teasers/DPC.png
+image: /images/teasers/DPC_teaser.png
 categories:
   - Agentic Orchestration
 author: Frank De Graeve
@@ -14,6 +14,8 @@ tags:
 draft: false
 original_platform:
 ---
+{{< figure src="/images/blogposts/DPC-example.png" >}}
+
 We're talking April 2025. The entire UX team of the organisation I worked for at that time had a 2 day get-together in Antwerp. The theme at hand was discovering the opportunities vibe coding would bring to our UX workflow. We got ourselves some accounts to V0, Bolt, Lovable, and I believe Figma make just started out. Some decks were shared introducing people to how this newfangled tech worked, some guidelines and best practices in prompting, and everyone got to work.
 
 Given we were using temp accounts some teams ran against the token limits, which kickstarted a conversation on the ecological impact of vibe coding and AI (LLM) in general. "Ice caps melting" and that type of stuff.
@@ -24,4 +26,4 @@ Fast-forward to today where I'm knee deep into agentic context engineering. Duri
 
 The Dead Penguin Calculator estimates the ecological cost of any of my AI conversations and visualizes it as an HTML penguin mortality grid. It works by scoring each chunk of a session using a hybrid cost model (token load × complexity multiplier), then converts that into a penguin count. Tongue-in-cheek, obviously, but grounded in real energy-consumption estimates for LLM inference. The output is a branded HTML report (my Yokogaki visual identity, Space Grotesk/Mono fonts, all in OKLCH colours) with a grid of penguin icons, dead ones and surviving ones. Plus a breakdown of which parts of the conversation cost the most.
 
-It's a conversation piece more than a scientific instrument, but it makes the abstract cost of AI usage visceral and a little absurd. Right how I like it. And before you ask, yes, it takes into account the actual cost of generating the report as well.
+It's a conversation piece more than a scientific instrument, but it makes the abstract cost of AI usage visceral and a little absurd. Just how I like it. And before you ask, yes, it takes into account the actual cost of generating the report as well.
