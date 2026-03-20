@@ -2,7 +2,7 @@
 fileClass: blog-post
 title: Conscious Agentic Orchestration with DPC
 meta_title: Conscious Agentic Orchestration
-description: Why I integrating a "Dead Penguin Calculator" skill in all my projects.
+description: Why I'm integrating a "Dead Penguin Calculator" skill in all my projects.
 date: 2026-03-20
 image: /images/teasers/DPC_teaser.png
 categories:

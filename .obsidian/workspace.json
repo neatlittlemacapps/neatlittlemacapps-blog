@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
+                "file": "content/english/blog/conscious-agentic-orchestration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context"
+              "title": "conscious-agentic-orchestration"
             }
           }
         ]
@@ -182,6 +182,8 @@
   },
   "active": "03ea4d6fb453741a",
   "lastOpenFiles": [
+    "content/english/blog/wrapping-up-a-chapter-at-infinitas-learning.md",
+    "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
     "content/english/blog/conscious-agentic-orchestration.md",
     "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
     "assets/images/blogposts/DPC-example.png",
@@ -197,7 +199,6 @@
     "DPC_teaser.png",
     "assets/images/teasers/DPC.png",
     "assets/images/teasers/new_journey.png",
-    "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
     "content/english/blog/the-bot-chronicles-s01e02-r-and-d-definition.md",
     "content/english/blog/the-bot-chronicles-s01e09-domains-contexts-intents-and-entities.md",
     "content/english/blog/the-bot-chronicles-s01e08-sneaky-bastards-them-bots.md",
@@ -208,7 +209,6 @@
     "content/english/blog/stop-expecting-to-hire-miracle-workers.md",
     "content/english/blog/starting-fresh.md",
     "content/english/blog/bot-chronicles-epilogue.md",
-    "content/english/blog/wrapping-up-a-chapter-at-infinitas-learning.md",
     "readme.md",
     "DEVELOPER_DOCS.md",
     "COPY-GUIDE.md",
