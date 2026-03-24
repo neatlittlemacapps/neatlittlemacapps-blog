@@ -5,9 +5,9 @@
         <article class="lg:col-8">
           {{ $image:= .Params.image }}
           {{ if and $image (ne $image "") }}
-            <div class="mb-10">
+            <figure class="wide mb-10">
               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
-            </div>
+            </figure>
           {{ end }}
           <h1 class="h2 mb-4">
             {{ .Title }}

@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <section class="section pt-7">
+    <div class="container">
+      <div class="row justify-center">
+        <article class="lg:col-8">
+          {{ $image:= .Params.image }}
+          {{ if and $image (ne $image "") }}
+            <figure class="wide mb-10">
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+            </figure>
+          {{ end }}
+          <h1 class="h2 mb-4">
+            {{ .Title }}
+          </h1>
+          {{ $categories:= .Params.categories }}
+          {{ if $categories }}
+            <div class="mb-4">
+              {{ range $categories }}
+                <span class="bg-light dark:bg-darkmode-light rounded px-2 py-1 mr-1 text-sm">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+          <div class="content mb-10">
+            {{ .Content }}
+          </div>
+          {{ $tags:= .Params.tags }}
+          {{ if $tags }}
+            <div class="mb-10 flex items-center">
+              <h5 class="mr-3">{{ T "tags" | default "Tags" }} :</h5>
+              <ul>
+                {{ range $tags }}
+                  <li class="inline-block">
+                    <a
+                      class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                      href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                      {{ . | humanize }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </article>
+      </div>
+    </div>
+  </section>
+{{ end }}
