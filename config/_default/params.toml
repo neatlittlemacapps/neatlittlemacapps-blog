@@ -10,7 +10,7 @@ navbar_fixed = true
 theme_switcher = true
 theme_default = "system"
 mainSections = ["blog"]
-contact_form_action = "#"
+contact_form_action = "https://formspree.io/f/mdawqyyz"
 custom_script = ""
 copyright = "Frank De Graeve"
 
