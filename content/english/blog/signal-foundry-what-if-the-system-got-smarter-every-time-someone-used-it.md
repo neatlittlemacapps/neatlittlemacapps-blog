@@ -1,21 +1,21 @@
 ---
 fileClass: blog-post
 title: "Signal Foundry (Beta): What if the system got smarter every time someone used it?"
-meta_title: "Signal Foundry — What if AI infrastructure learned from every team?"
-description: "What if the AI infrastructure you built for one team automatically made every other team better, without anyone having to remember to share anything?"
-date: '2026-03-26'
+meta_title: "Signal Foundry: What if AI infrastructure learned from every team?"
+description: What if the AI infrastructure you built for one team automatically made every other team better, without anyone having to remember to share anything?
+date: 2026-03-26
 image: /images/teasers/signal-foundry-b.png
 categories:
-- DesignOps
+  - DesignOps
 author: Frank De Graeve
 tags:
-- ux-strategy
-- designops
-- agentic-ai
-- product-design
-- design-systems
+  - ux-strategy
+  - designops
+  - agentic-ai
+  - product-design
+  - design-systems
 draft: false
-original_platform: 
+original_platform:
 ---
 What if the AI infrastructure you built for one team automatically made every other team better, without anyone having to remember to share anything?
 
