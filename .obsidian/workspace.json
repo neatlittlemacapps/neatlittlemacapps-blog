@@ -182,6 +182,9 @@
   },
   "active": "03ea4d6fb453741a",
   "lastOpenFiles": [
+    "static/favicon.ico",
+    "content/english/cv/_index.md",
+    "content/english/cv",
     "assets/images/blogposts/signal-foundry-architecture.gif",
     "assets/images/blogposts/signal-foundry-b-schema.png",
     "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
@@ -208,7 +211,6 @@
     "assets/images/teasers/DPC_teaser.png",
     "assets/images/DPC-example.png",
     "assets/images/DPC_teaser.png",
-    "DPC-example.png",
     "content/english/blog/the-bot-chronicles-s01e02-r-and-d-definition.md",
     "content/english/blog/the-bot-chronicles-s01e09-domains-contexts-intents-and-entities.md",
     "content/english/blog/the-bot-chronicles-s01e08-sneaky-bastards-them-bots.md",
@@ -220,13 +222,11 @@
     "DEVELOPER_DOCS.md",
     "COPY-GUIDE.md",
     "{{<.md",
-    "content/english/blog/the-bot-chronicles-s01e08.md",
     "Users/frank/Documents/Projects",
     "Users/frank/Documents",
     "Users/frank",
     "Users",
     "assets/images/medium",
-    "static/images/medium",
-    "static/images"
+    "static/images/medium"
   ]
 }
