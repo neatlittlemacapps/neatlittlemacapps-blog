@@ -22,7 +22,7 @@ preloader = ""
 [navigation_button]
 enable = true
 label = "Let's Talk"
-link = "mailto:neatlittlemacapps@gmail.com"
+link = "contact"
 
 [search]
 enable = true
