@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/english/blog/conscious-agentic-orchestration.md",
+                "file": "content/english/blog/signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conscious-agentic-orchestration"
+              "title": "signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it"
             }
           }
         ]
@@ -182,14 +182,21 @@
   },
   "active": "03ea4d6fb453741a",
   "lastOpenFiles": [
+    "assets/images/blogposts/signal-foundry-architecture.gif",
+    "assets/images/blogposts/signal-foundry-b-schema.png",
+    "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
+    "content/english/blog/signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it.md",
+    "content/english/blog/chatbot-development-for-the-masses.md",
+    "content/english/blog/conscious-agentic-orchestration.md",
+    "assets/images/blogposts/vertical.png",
+    "assets/images/teasers/signal-foundry-b.png",
+    "assets/images/teasers/Signal-Foundry-B.png",
     "content/english/_index.md",
     "content/english/cases/liantis-ux-research.md",
     "content/english/cases/infinitas-designops.md",
     "content/english/cases/_index.md",
-    "content/english/blog/conscious-agentic-orchestration.md",
     "content/english/blog/the-bot-chronicles-s01e05-how-to-define-for-whom-to-build-your-bot.md",
     "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
-    "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
     "content/english/blog/stop-expecting-to-hire-miracle-workers.md",
     "content/english/blog/starting-fresh.md",
     "content/english/blog/wrapping-up-a-chapter-at-infinitas-learning.md",
@@ -197,15 +204,11 @@
     "assets/images/blogposts",
     "blogposts",
     "untitled folder",
-    "content/english/blog/chatbot-development-for-the-masses.md",
     "assets/images/teasers/DPC-example.png",
     "assets/images/teasers/DPC_teaser.png",
     "assets/images/DPC-example.png",
     "assets/images/DPC_teaser.png",
     "DPC-example.png",
-    "DPC_teaser.png",
-    "assets/images/teasers/DPC.png",
-    "assets/images/teasers/new_journey.png",
     "content/english/blog/the-bot-chronicles-s01e02-r-and-d-definition.md",
     "content/english/blog/the-bot-chronicles-s01e09-domains-contexts-intents-and-entities.md",
     "content/english/blog/the-bot-chronicles-s01e08-sneaky-bastards-them-bots.md",
@@ -218,14 +221,11 @@
     "COPY-GUIDE.md",
     "{{<.md",
     "content/english/blog/the-bot-chronicles-s01e08.md",
-    "Users/frank/Documents/Projects/Techo.md",
     "Users/frank/Documents/Projects",
     "Users/frank/Documents",
     "Users/frank",
     "Users",
-    "assets/images/medium/0_9D0J37m40h83A-RT.jpg",
     "assets/images/medium",
-    "content/english/blog/_index.md",
     "static/images/medium",
     "static/images"
   ]
