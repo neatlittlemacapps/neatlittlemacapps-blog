@@ -24,6 +24,10 @@ fields:
     type: Input
     id: cs_image
     path: ""
+  - name: og_image
+    type: Input
+    id: cs_og_image
+    path: ""
   - name: categories
     type: Multi
     id: cs_categories

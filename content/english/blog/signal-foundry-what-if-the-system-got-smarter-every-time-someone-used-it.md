@@ -5,6 +5,7 @@ meta_title: "Signal Foundry: What if AI infrastructure learned from every team?"
 description: What if the AI infrastructure you built for one team automatically made every other team better, without anyone having to remember to share anything?
 date: 2026-03-26
 image: /images/teasers/signal-foundry-b.png
+og_image: /images/blogposts/signal-foundry-b-schema.png
 categories:
   - DesignOps
 author: Frank De Graeve

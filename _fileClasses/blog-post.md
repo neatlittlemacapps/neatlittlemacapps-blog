@@ -24,6 +24,10 @@ fields:
     type: Input
     id: bp_image
     path: ""
+  - name: og_image
+    type: Input
+    id: bp_og_image
+    path: ""
   - name: categories
     type: Multi
     id: bp_categories

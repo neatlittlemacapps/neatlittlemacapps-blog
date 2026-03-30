@@ -1,18 +1,18 @@
 ---
 fileClass: blog-post
-title: 'The Bot Chronicles S01E06: How to define your bot personality'
-meta_title: ''
-description: 'This is episode 6 of the series. Be sure to check out the previous episodes here:'
-date: '2017-05-18'
+title: "The Bot Chronicles S01E06: How to define your bot personality"
+meta_title: ""
+description: "This is episode 6 of the series. Be sure to check out the previous episodes here:"
+date: 2017-05-18
 image: /images/medium/1_aA8RfHb3gGRA4RcvuyAsvQ.png
 categories:
-- Archive
+  - Archive
 author: Frank De Graeve
 tags:
-- archive
-- chatbots
-- conversational-ai
-- bot-chronicles
+  - archive
+  - chatbots
+  - conversational-ai
+  - bot-chronicles
 draft: false
 original_platform: Medium
 ---

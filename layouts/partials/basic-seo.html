@@ -1,0 +1,167 @@
+{{- /*
+  basic-seo.html — project-level override of gethugothemes/basic-seo
+  Changes vs upstream:
+    1. og_image frontmatter field (separate OG image per page)
+    2. Fallback chain: og_image → image → site metadata.image
+    3. Hugo image processing to resize OG images to 1200×630
+    4. og:image:width / og:image:height always set
+    5. article:published_time + article:author for blog posts
+*/ -}}
+
+<!-- base url -->
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") }}
+{{ else }}
+  <base href="{{ .Permalink }}" />
+{{ end }}
+
+<!-- title -->
+{{ $title := site.Title }}
+{{ if .Params.meta_title }}
+  {{ $title = .Params.meta_title }}
+{{ else if .Params.title }}
+  {{ $title = .Params.title }}
+{{ end }}
+
+<!-- description -->
+{{ $description := .Summary }}
+{{ if .Params.meta_description }}
+  {{ $description = .Params.meta_description }}
+{{ else if .Params.description }}
+  {{ $description = .Params.description }}
+{{ else if site.Params.metadata.description }}
+  {{ $description = site.Params.metadata.description }}
+{{ end }}
+
+<!-- og image: og_image → image → site default -->
+{{ $imagePath := site.Params.metadata.image }}
+{{ if .Params.og_image }}
+  {{ $imagePath = .Params.og_image }}
+{{ else if .Params.meta_image }}
+  {{ $imagePath = .Params.meta_image }}
+{{ else if .Params.images }}
+  {{ range first 1 .Params.images }}
+    {{ $imagePath = . }}
+  {{ end }}
+{{ else if .Params.image }}
+  {{ $imagePath = .Params.image }}
+{{ end }}
+
+<title>{{ $title }}</title>
+
+{{ if .Param "noindex" }}
+  <meta name="robots" content="noindex,nofollow" />
+{{ end }}
+
+{{ with .Params.canonical }}
+  <link rel="canonical" href="{{ . }}" itemprop="url" />
+{{ end }}
+
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{ end }}
+
+{{ if .Params.keywords }}
+  <meta name="keywords" content="{{ delimit .Params.keywords `, ` }}" />
+{{ else if site.Params.metadata.keywords }}
+  <meta name="keywords" content="{{ delimit site.Params.metadata.keywords `, ` }}" />
+{{ end }}
+
+<meta name="description" content="{{ $description }}" />
+
+{{ with site.Params.metadata.author }}
+  <meta name="author" content="{{ . }}" />
+{{ end }}
+
+<!-- ######### OpenGraph and Twitter image meta ############## -->
+
+{{ $ogWidth := 0 }}
+{{ $ogHeight := 0 }}
+{{ $ogImageURL := "" }}
+
+{{ if or (hasPrefix $imagePath "http") (fileExists (add `static/` (string $imagePath))) }}
+  {{- /* CDN or static image — can't process, use as-is */ -}}
+  {{ $ogImageURL = ($imagePath | absURL) }}
+{{ else }}
+  {{- /* Try content resources, then assets */ -}}
+  {{ $contentImage := .Resources.GetMatch (printf "*%s*" $imagePath) }}
+  {{ $assetImage := fileExists (add `assets/` (string $imagePath)) }}
+
+  {{ if or $contentImage $assetImage }}
+    {{ $image := "" }}
+    {{ if $contentImage }}
+      {{ $image = $contentImage }}
+    {{ else if $assetImage }}
+      {{ $image = (resources.Get $imagePath) }}
+    {{ end }}
+
+    {{ $imageExt := path.Ext $image }}
+
+    {{ if ne $imageExt `.svg` }}
+      {{- /* Resize to OG dimensions (1200×630) if source is large enough */ -}}
+      {{ if and (ge $image.Width 1200) (ge $image.Height 630) }}
+        {{ $ogImage := $image.Fill "1200x630 Center" }}
+        {{ $ogImageURL = $ogImage.Permalink }}
+        {{ $ogWidth = 1200 }}
+        {{ $ogHeight = 630 }}
+      {{ else if and (gt $image.Width 144) (gt $image.Height 144) }}
+        {{- /* Source too small to crop to 1200×630 — use original */ -}}
+        {{ $ogImageURL = $image.Permalink }}
+        {{ $ogWidth = $image.Width }}
+        {{ $ogHeight = $image.Height }}
+      {{ end }}
+    {{ else }}
+      {{- /* SVG — use as-is */ -}}
+      {{ $ogImageURL = $image.Permalink }}
+    {{ end }}
+
+    {{ if ne $ogImageURL "" }}
+      <meta property="og:image:type" content="image/{{- if eq $imageExt `.svg` -}}svg+xml{{- else -}}{{- replaceRE `^\\.?jpg$` `jpeg` (strings.TrimPrefix `.` $imageExt) -}}{{- end -}}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if ne $ogImageURL "" }}
+  <meta property="og:image" content="{{ $ogImageURL }}" />
+  <meta name="twitter:image" content="{{ $ogImageURL }}" />
+  <meta name="twitter:card" content="{{- if and (gt $ogWidth 300) (gt $ogHeight 157) (not (eq $ogWidth $ogHeight)) -}}summary_large_image{{- else -}}summary_large_image{{- end -}}" />
+  {{ if gt $ogWidth 0 }}
+    <meta property="og:image:width" content="{{ $ogWidth }}" />
+    <meta property="og:image:height" content="{{ $ogHeight }}" />
+  {{ end }}
+{{ end }}
+
+<!-- ######### OpenGraph others meta ############## -->
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
+
+{{ if .IsPage }}
+  {{ with .Date }}
+    <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ end }}
+  {{ with .Lastmod }}
+    <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ end }}
+  {{ with .Params.author }}
+    <meta property="article:author" content="{{ . }}" />
+  {{ end }}
+  {{ range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}" />
+  {{ end }}
+{{ end }}
+
+<!-- ########## Twitter others meta ############### -->
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+{{ with site.Params.metadata.twitter }}
+  <meta name="twitter:site" content="@{{ . }}" />
+{{ end }}
+{{ with site.Params.metadata.author }}
+  <meta name="twitter:creator" content="@{{ . }}" />
+{{ end }}

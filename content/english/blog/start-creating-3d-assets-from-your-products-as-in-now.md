@@ -1,20 +1,21 @@
 ---
 fileClass: blog-post
 title: Start creating 3D assets from your products, as in, now!
-meta_title: ''
+meta_title: ""
 description: Why am I all up in arms here? What happened? On September 17th Apple’s iOS 12 update launched. What about it? Well, some time ago Apple…
-date: '2018-10-06'
+date: 2018-10-06
 image: /images/medium/0_OHiOPxhuRpEjlzdQ.jpg
 categories:
-- Archive
+  - Archive
 author: Frank De Graeve
 tags:
-- archive
-- ar
-- 3d
-- technology
+  - archive
+  - ar
+  - 3d
+  - technology
 draft: false
 original_platform: Medium
+og_image:
 ---
 
 {{< figure src="/images/medium/0_OHiOPxhuRpEjlzdQ.jpg" >}}

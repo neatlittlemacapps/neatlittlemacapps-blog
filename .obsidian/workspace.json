@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3d2da1ba25208c18",
+        "id": "f0c202fc5e9f4aba",
         "type": "tabs",
         "children": [
           {
-            "id": "03ea4d6fb453741a",
+            "id": "20e5c16da758bf33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/english/blog/signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it.md",
-                "mode": "source",
-                "source": false
+                "file": "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it"
+              "title": "start-creating-3d-assets-from-your-products-as-in-now"
             }
           }
         ]
@@ -180,17 +180,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "03ea4d6fb453741a",
+  "active": "20e5c16da758bf33",
   "lastOpenFiles": [
+    "content/english/blog/signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it.md",
+    "_fileClasses/blog-post.md",
+    "content/english/blog/chatbot-development-for-the-masses.md",
+    "_fileClasses/case-study.md",
+    "content/english/blog/the-bot-chronicles-s01e06-how-to-define-your-bot-personality.md",
+    "content/english/blog/the-bot-chronicles-s01e02-r-and-d-definition.md",
+    "content/english/blog/the-bot-chronicles-s01e01-crashcourse.md",
+    "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
+    "content/english/blog/the-bot-chronicles-s01e05-how-to-define-for-whom-to-build-your-bot.md",
+    "content/english/blog/the-bot-chronicles-s01e07-how-to-define-your-bot-functionality.md",
+    "content/english/blog/stop-expecting-to-hire-miracle-workers.md",
+    "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
+    "content/english/blog/conscious-agentic-orchestration.md",
+    "content/english/blog/bot-chronicles-epilogue.md",
+    "layouts/partials/basic-seo.html",
+    "layouts/partials",
     "static/favicon.ico",
     "content/english/cv/_index.md",
     "content/english/cv",
     "assets/images/blogposts/signal-foundry-architecture.gif",
     "assets/images/blogposts/signal-foundry-b-schema.png",
-    "content/english/blog/start-creating-3d-assets-from-your-products-as-in-now.md",
-    "content/english/blog/signal-foundry-what-if-the-system-got-smarter-every-time-someone-used-it.md",
-    "content/english/blog/chatbot-development-for-the-masses.md",
-    "content/english/blog/conscious-agentic-orchestration.md",
     "assets/images/blogposts/vertical.png",
     "assets/images/teasers/signal-foundry-b.png",
     "assets/images/teasers/Signal-Foundry-B.png",
@@ -198,9 +210,6 @@
     "content/english/cases/liantis-ux-research.md",
     "content/english/cases/infinitas-designops.md",
     "content/english/cases/_index.md",
-    "content/english/blog/the-bot-chronicles-s01e05-how-to-define-for-whom-to-build-your-bot.md",
-    "content/english/blog/the-bot-chronicles-s01e03-voice-first-and-what-this-means-in-an-international-context.md",
-    "content/english/blog/stop-expecting-to-hire-miracle-workers.md",
     "content/english/blog/starting-fresh.md",
     "content/english/blog/wrapping-up-a-chapter-at-infinitas-learning.md",
     "assets/images/blogposts/DPC-example.png",
@@ -211,22 +220,13 @@
     "assets/images/teasers/DPC_teaser.png",
     "assets/images/DPC-example.png",
     "assets/images/DPC_teaser.png",
-    "content/english/blog/the-bot-chronicles-s01e02-r-and-d-definition.md",
     "content/english/blog/the-bot-chronicles-s01e09-domains-contexts-intents-and-entities.md",
     "content/english/blog/the-bot-chronicles-s01e08-sneaky-bastards-them-bots.md",
-    "content/english/blog/the-bot-chronicles-s01e07-how-to-define-your-bot-functionality.md",
-    "content/english/blog/the-bot-chronicles-s01e06-how-to-define-your-bot-personality.md",
-    "content/english/blog/the-bot-chronicles-s01e01-crashcourse.md",
-    "content/english/blog/bot-chronicles-epilogue.md",
     "readme.md",
     "DEVELOPER_DOCS.md",
     "COPY-GUIDE.md",
-    "{{<.md",
     "Users/frank/Documents/Projects",
     "Users/frank/Documents",
-    "Users/frank",
-    "Users",
-    "assets/images/medium",
-    "static/images/medium"
+    "Users/frank"
   ]
 }
